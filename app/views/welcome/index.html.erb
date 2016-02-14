@@ -1,0 +1,29 @@
+<div class="wrapper wrapper_padding clearfix">
+	<div class="col-1 about homepage_content">
+		<h2>About</h2>
+		<hr>
+		<p>My name is Dan Rempel and I am a web developer living in Edmonton, Alberta.</p>
+		<p>By day I work as a Sr. Client Support Technician for the University of Alberta, by night I freelance web development projects for my own company, <a href="http://www.dare-studios.com" target="_blank">Dare Studios</a>.</p>
+		<p>I am absolutely <strong>in love</strong> with Ruby on Rails and I am dedicated to becoming a Ruby and Rails expert. It is my dream to someday work with Rails as a career.</p>
+		<p>Flannel keytar green juice, fashion axe vinyl artisan taxidermy actually you probably haven't heard of them mumblecore paleo hoodie. Twee squid pickled drinking vinegar, fap blog tumblr tattooed plaid pop-up mlkshk. Sriracha forage green juice chillwave man braid gentrify. Scenester artisan wolf chillwave 8-bit fanny pack ennui, thundercats brooklyn neutra. Listicle drinking vinegar selvage tilde semiotics, truffaut PBR&B leggings sartorial mixtape VHS poutine pitchfork health goth.</p>
+	</div>
+	<div class="col-2 homepage_content">
+		<h2>Stuff I've Written</h2>
+		<hr>
+		
+		<% @posts.each do |post| %>
+			<h3><%= link_to post.title, post %></h3>
+			<p class="date"><%= post.created_at.strftime("%A, #%b, %d") %></p>
+		<%end %>
+	</div>
+	<div class="col-3 homepage_content">
+		<h2>Projects</h2>
+		<hr>
+		<h3><a href="#">Quotebox</a></h3>
+		<p class="date">Sunday, February 14th</p>
+		<h3><a href="#">Inventory Management</a></h3>
+		<p class="date">Sunday, February 14th</p>
+		<h3><a href="#">5 in 10 Challenge</a></h3>
+		<p class="date">Sunday, February 14th</p>
+	</div>
+</div>
