@@ -13,7 +13,7 @@
 		
 		<% @posts.each do |post| %>
 			<h3><%= link_to post.title, post %></h3>
-			<p class="date"><%= post.created_at.strftime("%A, %B %d") %></p>
+			<p class="date"><%= post.created_at.strftime("%B %d, %Y") %></p>
 		<%end %>
 	</div>
 	<div class="col-3 homepage_content">
