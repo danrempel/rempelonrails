@@ -103,14 +103,11 @@ hr {
 		margin: 2rem 0;
 	}
 
-header {
-	background-color: #fff;
-	box-shadow: 0 10px 15px -8px #000;
-}
-
 #main_navigation {
 	padding: 2.5em 5%;
 	border-bottom: 1px solid $border;
+	background-color: #fff;
+	box-shadow: 0 10px 15px -8px #000;
 	.active {
 		color: $highlight;
 	}

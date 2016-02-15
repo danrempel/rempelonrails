@@ -10,7 +10,6 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'unicorn'
-gem 'bootstrap-sass', '~> 3.3.6'
 gem "newrelic_plugin"
 
 group :development, :test do
