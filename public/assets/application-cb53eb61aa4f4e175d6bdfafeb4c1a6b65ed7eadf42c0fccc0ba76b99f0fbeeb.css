@@ -1,0 +1,2053 @@
+/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS and IE text size adjust after device orientation change,
+ *    without disabling user zoom.
+ */
+/* line 10, /home/deploy/rempelonrails/app/assets/stylesheets/_normalize.css.scss */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/**
+ * Remove default margin.
+ */
+/* line 20, /home/deploy/rempelonrails/app/assets/stylesheets/_normalize.css.scss */
+body {
+  margin: 0; }
+
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11
+ * and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+/* line 34, /home/deploy/rempelonrails/app/assets/stylesheets/_normalize.css.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block; }
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+/* line 55, /home/deploy/rempelonrails/app/assets/stylesheets/_normalize.css.scss */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */ }
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+/* line 68, /home/deploy/rempelonrails/app/assets/stylesheets/_normalize.css.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/10/11, Safari, and Firefox < 22.
+ */
+/* line 78, /home/deploy/rempelonrails/app/assets/stylesheets/_normalize.css.scss */
+[hidden],
+template {
+  display: none; }
+
+/* Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+/* line 90, /home/deploy/rempelonrails/app/assets/stylesheets/_normalize.css.scss */
+a {
+  background-color: transparent; }
+
+/**
+ * Improve readability of focused elements when they are also in an
+ * active/hover state.
+ */
+/* line 99, /home/deploy/rempelonrails/app/assets/stylesheets/_normalize.css.scss */
+a:active,
+a:hover {
+  outline: 0; }
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+/* line 111, /home/deploy/rempelonrails/app/assets/stylesheets/_normalize.css.scss */
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+/* line 119, /home/deploy/rempelonrails/app/assets/stylesheets/_normalize.css.scss */
+b,
+strong {
+  font-weight: bold; }
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+/* line 128, /home/deploy/rempelonrails/app/assets/stylesheets/_normalize.css.scss */
+dfn {
+  font-style: italic; }
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+/* line 137, /home/deploy/rempelonrails/app/assets/stylesheets/_normalize.css.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+/* line 146, /home/deploy/rempelonrails/app/assets/stylesheets/_normalize.css.scss */
+mark {
+  background: #ff0;
+  color: #000; }
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+/* line 155, /home/deploy/rempelonrails/app/assets/stylesheets/_normalize.css.scss */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+/* line 163, /home/deploy/rempelonrails/app/assets/stylesheets/_normalize.css.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+/* line 171, /home/deploy/rempelonrails/app/assets/stylesheets/_normalize.css.scss */
+sup {
+  top: -0.5em; }
+
+/* line 175, /home/deploy/rempelonrails/app/assets/stylesheets/_normalize.css.scss */
+sub {
+  bottom: -0.25em; }
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+/* line 186, /home/deploy/rempelonrails/app/assets/stylesheets/_normalize.css.scss */
+img {
+  border: 0; }
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+/* line 194, /home/deploy/rempelonrails/app/assets/stylesheets/_normalize.css.scss */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+/* line 205, /home/deploy/rempelonrails/app/assets/stylesheets/_normalize.css.scss */
+figure {
+  margin: 1em 40px; }
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+/* line 213, /home/deploy/rempelonrails/app/assets/stylesheets/_normalize.css.scss */
+hr {
+  box-sizing: content-box;
+  height: 0; }
+
+/**
+ * Contain overflow in all browsers.
+ */
+/* line 222, /home/deploy/rempelonrails/app/assets/stylesheets/_normalize.css.scss */
+pre {
+  overflow: auto; }
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+/* line 230, /home/deploy/rempelonrails/app/assets/stylesheets/_normalize.css.scss */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em; }
+
+/* Forms
+   ========================================================================== */
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+/* line 253, /home/deploy/rempelonrails/app/assets/stylesheets/_normalize.css.scss */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+  margin: 0;
+  /* 3 */ }
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+/* line 267, /home/deploy/rempelonrails/app/assets/stylesheets/_normalize.css.scss */
+button {
+  overflow: visible; }
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+/* line 278, /home/deploy/rempelonrails/app/assets/stylesheets/_normalize.css.scss */
+button,
+select {
+  text-transform: none; }
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+/* line 291, /home/deploy/rempelonrails/app/assets/stylesheets/_normalize.css.scss */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */ }
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+/* line 303, /home/deploy/rempelonrails/app/assets/stylesheets/_normalize.css.scss */
+button[disabled],
+html input[disabled] {
+  cursor: default; }
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+/* line 312, /home/deploy/rempelonrails/app/assets/stylesheets/_normalize.css.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+/* line 323, /home/deploy/rempelonrails/app/assets/stylesheets/_normalize.css.scss */
+input {
+  line-height: normal; }
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+/* line 335, /home/deploy/rempelonrails/app/assets/stylesheets/_normalize.css.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+/* line 347, /home/deploy/rempelonrails/app/assets/stylesheets/_normalize.css.scss */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome.
+ */
+/* line 357, /home/deploy/rempelonrails/app/assets/stylesheets/_normalize.css.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  box-sizing: content-box;
+  /* 2 */ }
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+/* line 368, /home/deploy/rempelonrails/app/assets/stylesheets/_normalize.css.scss */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+/* line 377, /home/deploy/rempelonrails/app/assets/stylesheets/_normalize.css.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+/* line 388, /home/deploy/rempelonrails/app/assets/stylesheets/_normalize.css.scss */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+/* line 397, /home/deploy/rempelonrails/app/assets/stylesheets/_normalize.css.scss */
+textarea {
+  overflow: auto; }
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+/* line 406, /home/deploy/rempelonrails/app/assets/stylesheets/_normalize.css.scss */
+optgroup {
+  font-weight: bold; }
+
+/* Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+/* line 417, /home/deploy/rempelonrails/app/assets/stylesheets/_normalize.css.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 422, /home/deploy/rempelonrails/app/assets/stylesheets/_normalize.css.scss */
+td,
+th {
+  padding: 0; }
+/* line 7, /home/deploy/rempelonrails/app/assets/stylesheets/_posts_projects.css.scss */
+#posts_wrapper {
+  padding: 3em 0; }
+  /* line 9, /home/deploy/rempelonrails/app/assets/stylesheets/_posts_projects.css.scss */
+  #posts_wrapper .post {
+    text-align: center; }
+    /* line 11, /home/deploy/rempelonrails/app/assets/stylesheets/_posts_projects.css.scss */
+    #posts_wrapper .post .date {
+      font-size: .9em;
+      margin: 0; }
+    /* line 15, /home/deploy/rempelonrails/app/assets/stylesheets/_posts_projects.css.scss */
+    #posts_wrapper .post h2 {
+      margin: 0;
+      font-size: 2em;
+      text-transform: uppercase; }
+      /* line 19, /home/deploy/rempelonrails/app/assets/stylesheets/_posts_projects.css.scss */
+      #posts_wrapper .post h2 a {
+        text-decoration: none;
+        color: #424652; }
+        /* line 22, /home/deploy/rempelonrails/app/assets/stylesheets/_posts_projects.css.scss */
+        #posts_wrapper .post h2 a:hover {
+          color: #c00; }
+    /* line 27, /home/deploy/rempelonrails/app/assets/stylesheets/_posts_projects.css.scss */
+    #posts_wrapper .post hr {
+      margin: 3em auto; }
+
+/* line 35, /home/deploy/rempelonrails/app/assets/stylesheets/_posts_projects.css.scss */
+#post_show_content header {
+  text-align: center; }
+  /* line 37, /home/deploy/rempelonrails/app/assets/stylesheets/_posts_projects.css.scss */
+  #post_show_content header .date {
+    font-style: .9em;
+    color: #9a9da4;
+    margin: 0; }
+  /* line 42, /home/deploy/rempelonrails/app/assets/stylesheets/_posts_projects.css.scss */
+  #post_show_content header h1 {
+    margin: 0; }
+/* line 46, /home/deploy/rempelonrails/app/assets/stylesheets/_posts_projects.css.scss */
+#post_show_content hr {
+  margin: 3em auto; }
+
+/* line 51, /home/deploy/rempelonrails/app/assets/stylesheets/_posts_projects.css.scss */
+#share_box {
+  text-align: center; }
+  /* line 53, /home/deploy/rempelonrails/app/assets/stylesheets/_posts_projects.css.scss */
+  #share_box p {
+    padding-bottom: 0 0 1em 0;
+    margin: 0;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #424652;
+    font-size: .8em; }
+  /* line 61, /home/deploy/rempelonrails/app/assets/stylesheets/_posts_projects.css.scss */
+  #share_box i {
+    color: #424652;
+    padding: 1em 1.5em; }
+    /* line 64, /home/deploy/rempelonrails/app/assets/stylesheets/_posts_projects.css.scss */
+    #share_box i:hover {
+      color: #c00;
+      cursor: pointer; }
+
+/* line 71, /home/deploy/rempelonrails/app/assets/stylesheets/_posts_projects.css.scss */
+#admin_links {
+  border-top: 1px solid #D5D5D5;
+  border-bottom: 1px solid #D5D5D5;
+  text-align: center;
+  padding: 1em 0;
+  margin: 3em 0; }
+  /* line 77, /home/deploy/rempelonrails/app/assets/stylesheets/_posts_projects.css.scss */
+  #admin_links a {
+    color: #9a9da4;
+    margin: 0 1em;
+    font-weight: 700;
+    font-style: .8em;
+    text-transform: uppercase;
+    text-decoration: none; }
+    /* line 84, /home/deploy/rempelonrails/app/assets/stylesheets/_posts_projects.css.scss */
+    #admin_links a:hover {
+      color: #c00; }
+
+/* line 92, /home/deploy/rempelonrails/app/assets/stylesheets/_posts_projects.css.scss */
+.pagination:before,
+.pagination:after {
+  content: " ";
+  display: table; }
+
+/* line 98, /home/deploy/rempelonrails/app/assets/stylesheets/_posts_projects.css.scss */
+.pagination:after {
+  clear: both; }
+
+/* line 102, /home/deploy/rempelonrails/app/assets/stylesheets/_posts_projects.css.scss */
+.pagination {
+  text-align: center;
+  margin: 0 0 3em 0; }
+  /* line 105, /home/deploy/rempelonrails/app/assets/stylesheets/_posts_projects.css.scss */
+  .pagination a, .pagination .previous_page, .pagination .current, .pagination .next_page {
+    padding: .75em 1em;
+    margin: 0.5em;
+    border-radius: .15em;
+    line-height: 20px;
+    text-decoration: none;
+    background: #ffffff;
+    font-weight: 700;
+    font-size: .7em;
+    font-style: normal;
+    color: #424652; }
+    /* line 116, /home/deploy/rempelonrails/app/assets/stylesheets/_posts_projects.css.scss */
+    .pagination a:hover, .pagination .previous_page:hover, .pagination .current:hover, .pagination .next_page:hover {
+      background: #c00;
+      color: #ffffff; }
+  /* line 121, /home/deploy/rempelonrails/app/assets/stylesheets/_posts_projects.css.scss */
+  .pagination .current {
+    background: #c00;
+    color: #ffffff; }
+  /* line 125, /home/deploy/rempelonrails/app/assets/stylesheets/_posts_projects.css.scss */
+  .pagination .disabled {
+    color: #C0C0C0; }
+    /* line 127, /home/deploy/rempelonrails/app/assets/stylesheets/_posts_projects.css.scss */
+    .pagination .disabled:hover {
+      color: #C0C0C0;
+      background: #ffffff; }
+/* line 7, /home/deploy/rempelonrails/app/assets/stylesheets/_welcome.css.scss */
+.col-1, .col-2, .col-3 {
+  float: left; }
+
+/* line 11, /home/deploy/rempelonrails/app/assets/stylesheets/_welcome.css.scss */
+.col-1 {
+  width: 45%;
+  padding: 0 5% 0 2.5%; }
+
+/* line 16, /home/deploy/rempelonrails/app/assets/stylesheets/_welcome.css.scss */
+.col-2, .col-3 {
+  width: 27.5%;
+  padding: 0 2.5%; }
+
+/* line 22, /home/deploy/rempelonrails/app/assets/stylesheets/_welcome.css.scss */
+.homepage_content h2 {
+  font-size: 1.1rem;
+  text-transform: uppercase; }
+/* line 27, /home/deploy/rempelonrails/app/assets/stylesheets/_welcome.css.scss */
+.homepage_content h3 {
+  font-size: 1.35em;
+  font-weight: 400;
+  margin-bottom: .5em; }
+/* line 33, /home/deploy/rempelonrails/app/assets/stylesheets/_welcome.css.scss */
+.homepage_content a {
+  text-decoration: none;
+  color: #424652; }
+  /* line 36, /home/deploy/rempelonrails/app/assets/stylesheets/_welcome.css.scss */
+  .homepage_content a:hover {
+    color: #c00; }
+/* line 40, /home/deploy/rempelonrails/app/assets/stylesheets/_welcome.css.scss */
+.homepage_content .date {
+  font-size: .85em;
+  margin-bottom: 2em;
+  color: #9a9da4; }
+/* line 45, /home/deploy/rempelonrails/app/assets/stylesheets/_welcome.css.scss */
+.homepage_content p {
+  margin: 0 0 .75em 0; }
+
+/* line 50, /home/deploy/rempelonrails/app/assets/stylesheets/_welcome.css.scss */
+.about {
+  padding: 0 7.5% 0 0; }
+  /* line 52, /home/deploy/rempelonrails/app/assets/stylesheets/_welcome.css.scss */
+  .about a {
+    color: #c00;
+    font-weight: 700;
+    text-decoration: none; }
+/* 
+   Some simple Github-like styles, with syntax highlighting CSS via Pygments.
+*/
+/* line 6, /home/deploy/rempelonrails/app/assets/stylesheets/pygments.css.scss */
+pre {
+  background-color: #D5D5D5;
+  padding: 10px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  overflow: auto; }
+
+/* line 15, /home/deploy/rempelonrails/app/assets/stylesheets/pygments.css.scss */
+code {
+  background-color: #D5D5D5;
+  padding: 1px 3px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px; }
+
+/* line 23, /home/deploy/rempelonrails/app/assets/stylesheets/pygments.css.scss */
+.hll {
+  background-color: #ffffcc; }
+
+/* line 24, /home/deploy/rempelonrails/app/assets/stylesheets/pygments.css.scss */
+.c {
+  color: #888888; }
+
+/* Comment */
+/* line 25, /home/deploy/rempelonrails/app/assets/stylesheets/pygments.css.scss */
+.err {
+  color: #a61717;
+  background-color: #e3d2d2; }
+
+/* Error */
+/* line 26, /home/deploy/rempelonrails/app/assets/stylesheets/pygments.css.scss */
+.k {
+  color: #008800;
+  font-weight: bold; }
+
+/* Keyword */
+/* line 27, /home/deploy/rempelonrails/app/assets/stylesheets/pygments.css.scss */
+.cm {
+  color: #888888; }
+
+/* Comment.Multiline */
+/* line 28, /home/deploy/rempelonrails/app/assets/stylesheets/pygments.css.scss */
+.cp {
+  color: #cc0000;
+  font-weight: bold; }
+
+/* Comment.Preproc */
+/* line 29, /home/deploy/rempelonrails/app/assets/stylesheets/pygments.css.scss */
+.c1 {
+  color: #888888; }
+
+/* Comment.Single */
+/* line 30, /home/deploy/rempelonrails/app/assets/stylesheets/pygments.css.scss */
+.cs {
+  color: #cc0000;
+  font-weight: bold;
+  background-color: #fff0f0; }
+
+/* Comment.Special */
+/* line 31, /home/deploy/rempelonrails/app/assets/stylesheets/pygments.css.scss */
+.gd {
+  color: #000000;
+  background-color: #ffdddd; }
+
+/* Generic.Deleted */
+/* line 32, /home/deploy/rempelonrails/app/assets/stylesheets/pygments.css.scss */
+.ge {
+  font-style: italic; }
+
+/* Generic.Emph */
+/* line 33, /home/deploy/rempelonrails/app/assets/stylesheets/pygments.css.scss */
+.gr {
+  color: #aa0000; }
+
+/* Generic.Error */
+/* line 34, /home/deploy/rempelonrails/app/assets/stylesheets/pygments.css.scss */
+.gh {
+  color: #303030; }
+
+/* Generic.Heading */
+/* line 35, /home/deploy/rempelonrails/app/assets/stylesheets/pygments.css.scss */
+.gi {
+  color: #000000;
+  background-color: #ddffdd; }
+
+/* Generic.Inserted */
+/* line 36, /home/deploy/rempelonrails/app/assets/stylesheets/pygments.css.scss */
+.go {
+  color: #888888; }
+
+/* Generic.Output */
+/* line 37, /home/deploy/rempelonrails/app/assets/stylesheets/pygments.css.scss */
+.gp {
+  color: #555555; }
+
+/* Generic.Prompt */
+/* line 38, /home/deploy/rempelonrails/app/assets/stylesheets/pygments.css.scss */
+.gs {
+  font-weight: bold; }
+
+/* Generic.Strong */
+/* line 39, /home/deploy/rempelonrails/app/assets/stylesheets/pygments.css.scss */
+.gu {
+  color: #606060; }
+
+/* Generic.Subheading */
+/* line 40, /home/deploy/rempelonrails/app/assets/stylesheets/pygments.css.scss */
+.gt {
+  color: #aa0000; }
+
+/* Generic.Traceback */
+/* line 41, /home/deploy/rempelonrails/app/assets/stylesheets/pygments.css.scss */
+.kc {
+  color: #008800;
+  font-weight: bold; }
+
+/* Keyword.Constant */
+/* line 42, /home/deploy/rempelonrails/app/assets/stylesheets/pygments.css.scss */
+.kd {
+  color: #008800;
+  font-weight: bold; }
+
+/* Keyword.Declaration */
+/* line 43, /home/deploy/rempelonrails/app/assets/stylesheets/pygments.css.scss */
+.kn {
+  color: #008800;
+  font-weight: bold; }
+
+/* Keyword.Namespace */
+/* line 44, /home/deploy/rempelonrails/app/assets/stylesheets/pygments.css.scss */
+.kp {
+  color: #008800; }
+
+/* Keyword.Pseudo */
+/* line 45, /home/deploy/rempelonrails/app/assets/stylesheets/pygments.css.scss */
+.kr {
+  color: #008800;
+  font-weight: bold; }
+
+/* Keyword.Reserved */
+/* line 46, /home/deploy/rempelonrails/app/assets/stylesheets/pygments.css.scss */
+.kt {
+  color: #888888;
+  font-weight: bold; }
+
+/* Keyword.Type */
+/* line 47, /home/deploy/rempelonrails/app/assets/stylesheets/pygments.css.scss */
+.m {
+  color: #0000DD;
+  font-weight: bold; }
+
+/* Literal.Number */
+/* line 48, /home/deploy/rempelonrails/app/assets/stylesheets/pygments.css.scss */
+.s {
+  color: #dd2200;
+  background-color: #fff0f0; }
+
+/* Literal.String */
+/* line 49, /home/deploy/rempelonrails/app/assets/stylesheets/pygments.css.scss */
+.na {
+  color: #336699; }
+
+/* Name.Attribute */
+/* line 50, /home/deploy/rempelonrails/app/assets/stylesheets/pygments.css.scss */
+.nb {
+  color: #003388; }
+
+/* Name.Builtin */
+/* line 51, /home/deploy/rempelonrails/app/assets/stylesheets/pygments.css.scss */
+.nc {
+  color: #bb0066;
+  font-weight: bold; }
+
+/* Name.Class */
+/* line 52, /home/deploy/rempelonrails/app/assets/stylesheets/pygments.css.scss */
+.no {
+  color: #003366;
+  font-weight: bold; }
+
+/* Name.Constant */
+/* line 53, /home/deploy/rempelonrails/app/assets/stylesheets/pygments.css.scss */
+.nd {
+  color: #555555; }
+
+/* Name.Decorator */
+/* line 54, /home/deploy/rempelonrails/app/assets/stylesheets/pygments.css.scss */
+.ne {
+  color: #bb0066;
+  font-weight: bold; }
+
+/* Name.Exception */
+/* line 55, /home/deploy/rempelonrails/app/assets/stylesheets/pygments.css.scss */
+.nf {
+  color: #0066bb;
+  font-weight: bold; }
+
+/* Name.Function */
+/* line 56, /home/deploy/rempelonrails/app/assets/stylesheets/pygments.css.scss */
+.nl {
+  color: #336699;
+  font-style: italic; }
+
+/* Name.Label */
+/* line 57, /home/deploy/rempelonrails/app/assets/stylesheets/pygments.css.scss */
+.nn {
+  color: #bb0066;
+  font-weight: bold; }
+
+/* Name.Namespace */
+/* line 58, /home/deploy/rempelonrails/app/assets/stylesheets/pygments.css.scss */
+.py {
+  color: #336699;
+  font-weight: bold; }
+
+/* Name.Property */
+/* line 59, /home/deploy/rempelonrails/app/assets/stylesheets/pygments.css.scss */
+.nt {
+  color: #bb0066;
+  font-weight: bold; }
+
+/* Name.Tag */
+/* line 60, /home/deploy/rempelonrails/app/assets/stylesheets/pygments.css.scss */
+.nv {
+  color: #336699; }
+
+/* Name.Variable */
+/* line 61, /home/deploy/rempelonrails/app/assets/stylesheets/pygments.css.scss */
+.ow {
+  color: #008800; }
+
+/* Operator.Word */
+/* line 62, /home/deploy/rempelonrails/app/assets/stylesheets/pygments.css.scss */
+.w {
+  color: #bbbbbb; }
+
+/* Text.Whitespace */
+/* line 63, /home/deploy/rempelonrails/app/assets/stylesheets/pygments.css.scss */
+.mf {
+  color: #0000DD;
+  font-weight: bold; }
+
+/* Literal.Number.Float */
+/* line 64, /home/deploy/rempelonrails/app/assets/stylesheets/pygments.css.scss */
+.mh {
+  color: #0000DD;
+  font-weight: bold; }
+
+/* Literal.Number.Hex */
+/* line 65, /home/deploy/rempelonrails/app/assets/stylesheets/pygments.css.scss */
+.mi {
+  color: #0000DD;
+  font-weight: bold; }
+
+/* Literal.Number.Integer */
+/* line 66, /home/deploy/rempelonrails/app/assets/stylesheets/pygments.css.scss */
+.mo {
+  color: #0000DD;
+  font-weight: bold; }
+
+/* Literal.Number.Oct */
+/* line 67, /home/deploy/rempelonrails/app/assets/stylesheets/pygments.css.scss */
+.sb {
+  color: #dd2200;
+  background-color: #fff0f0; }
+
+/* Literal.String.Backtick */
+/* line 68, /home/deploy/rempelonrails/app/assets/stylesheets/pygments.css.scss */
+.sc {
+  color: #dd2200;
+  background-color: #fff0f0; }
+
+/* Literal.String.Char */
+/* line 69, /home/deploy/rempelonrails/app/assets/stylesheets/pygments.css.scss */
+.sd {
+  color: #dd2200;
+  background-color: #fff0f0; }
+
+/* Literal.String.Doc */
+/* line 70, /home/deploy/rempelonrails/app/assets/stylesheets/pygments.css.scss */
+.s2 {
+  color: #dd2200;
+  background-color: #fff0f0; }
+
+/* Literal.String.Double */
+/* line 71, /home/deploy/rempelonrails/app/assets/stylesheets/pygments.css.scss */
+.se {
+  color: #0044dd;
+  background-color: #fff0f0; }
+
+/* Literal.String.Escape */
+/* line 72, /home/deploy/rempelonrails/app/assets/stylesheets/pygments.css.scss */
+.sh {
+  color: #dd2200;
+  background-color: #fff0f0; }
+
+/* Literal.String.Heredoc */
+/* line 73, /home/deploy/rempelonrails/app/assets/stylesheets/pygments.css.scss */
+.si {
+  color: #3333bb;
+  background-color: #fff0f0; }
+
+/* Literal.String.Interpol */
+/* line 74, /home/deploy/rempelonrails/app/assets/stylesheets/pygments.css.scss */
+.sx {
+  color: #22bb22;
+  background-color: #f0fff0; }
+
+/* Literal.String.Other */
+/* line 75, /home/deploy/rempelonrails/app/assets/stylesheets/pygments.css.scss */
+.sr {
+  color: #008800;
+  background-color: #fff0ff; }
+
+/* Literal.String.Regex */
+/* line 76, /home/deploy/rempelonrails/app/assets/stylesheets/pygments.css.scss */
+.s1 {
+  color: #dd2200;
+  background-color: #fff0f0; }
+
+/* Literal.String.Single */
+/* line 77, /home/deploy/rempelonrails/app/assets/stylesheets/pygments.css.scss */
+.ss {
+  color: #aa6600;
+  background-color: #fff0f0; }
+
+/* Literal.String.Symbol */
+/* line 78, /home/deploy/rempelonrails/app/assets/stylesheets/pygments.css.scss */
+.bp {
+  color: #003388; }
+
+/* Name.Builtin.Pseudo */
+/* line 79, /home/deploy/rempelonrails/app/assets/stylesheets/pygments.css.scss */
+.vc {
+  color: #336699; }
+
+/* Name.Variable.Class */
+/* line 80, /home/deploy/rempelonrails/app/assets/stylesheets/pygments.css.scss */
+.vg {
+  color: #dd7700; }
+
+/* Name.Variable.Global */
+/* line 81, /home/deploy/rempelonrails/app/assets/stylesheets/pygments.css.scss */
+.vi {
+  color: #3333bb; }
+
+/* Name.Variable.Instance */
+/* line 82, /home/deploy/rempelonrails/app/assets/stylesheets/pygments.css.scss */
+.il {
+  color: #0000DD;
+  font-weight: bold; }
+
+/* Literal.Number.Integer.Long */
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS and IE text size adjust after device orientation change,
+ *    without disabling user zoom.
+ */
+@import url(https://fonts.googleapis.com/css?family=Bitter:400,700,400italic);
+/* line 9, /home/deploy/rempelonrails/app/assets/stylesheets/_normalize.css.scss */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/**
+ * Remove default margin.
+ */
+/* line 19, /home/deploy/rempelonrails/app/assets/stylesheets/_normalize.css.scss */
+body {
+  margin: 0; }
+
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11
+ * and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+/* line 33, /home/deploy/rempelonrails/app/assets/stylesheets/_normalize.css.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block; }
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+/* line 54, /home/deploy/rempelonrails/app/assets/stylesheets/_normalize.css.scss */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */ }
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+/* line 67, /home/deploy/rempelonrails/app/assets/stylesheets/_normalize.css.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/10/11, Safari, and Firefox < 22.
+ */
+/* line 77, /home/deploy/rempelonrails/app/assets/stylesheets/_normalize.css.scss */
+[hidden],
+template {
+  display: none; }
+
+/* Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+/* line 89, /home/deploy/rempelonrails/app/assets/stylesheets/_normalize.css.scss */
+a {
+  background-color: transparent; }
+
+/**
+ * Improve readability of focused elements when they are also in an
+ * active/hover state.
+ */
+/* line 98, /home/deploy/rempelonrails/app/assets/stylesheets/_normalize.css.scss */
+a:active,
+a:hover {
+  outline: 0; }
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+/* line 110, /home/deploy/rempelonrails/app/assets/stylesheets/_normalize.css.scss */
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+/* line 118, /home/deploy/rempelonrails/app/assets/stylesheets/_normalize.css.scss */
+b,
+strong {
+  font-weight: bold; }
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+/* line 127, /home/deploy/rempelonrails/app/assets/stylesheets/_normalize.css.scss */
+dfn {
+  font-style: italic; }
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+/* line 136, /home/deploy/rempelonrails/app/assets/stylesheets/_normalize.css.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+/* line 145, /home/deploy/rempelonrails/app/assets/stylesheets/_normalize.css.scss */
+mark {
+  background: #ff0;
+  color: #000; }
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+/* line 154, /home/deploy/rempelonrails/app/assets/stylesheets/_normalize.css.scss */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+/* line 162, /home/deploy/rempelonrails/app/assets/stylesheets/_normalize.css.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+/* line 170, /home/deploy/rempelonrails/app/assets/stylesheets/_normalize.css.scss */
+sup {
+  top: -0.5em; }
+
+/* line 174, /home/deploy/rempelonrails/app/assets/stylesheets/_normalize.css.scss */
+sub {
+  bottom: -0.25em; }
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+/* line 185, /home/deploy/rempelonrails/app/assets/stylesheets/_normalize.css.scss */
+img {
+  border: 0; }
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+/* line 193, /home/deploy/rempelonrails/app/assets/stylesheets/_normalize.css.scss */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+/* line 204, /home/deploy/rempelonrails/app/assets/stylesheets/_normalize.css.scss */
+figure {
+  margin: 1em 40px; }
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+/* line 212, /home/deploy/rempelonrails/app/assets/stylesheets/_normalize.css.scss */
+hr {
+  box-sizing: content-box;
+  height: 0; }
+
+/**
+ * Contain overflow in all browsers.
+ */
+/* line 221, /home/deploy/rempelonrails/app/assets/stylesheets/_normalize.css.scss */
+pre {
+  overflow: auto; }
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+/* line 229, /home/deploy/rempelonrails/app/assets/stylesheets/_normalize.css.scss */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em; }
+
+/* Forms
+   ========================================================================== */
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+/* line 252, /home/deploy/rempelonrails/app/assets/stylesheets/_normalize.css.scss */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+  margin: 0;
+  /* 3 */ }
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+/* line 266, /home/deploy/rempelonrails/app/assets/stylesheets/_normalize.css.scss */
+button {
+  overflow: visible; }
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+/* line 277, /home/deploy/rempelonrails/app/assets/stylesheets/_normalize.css.scss */
+button,
+select {
+  text-transform: none; }
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+/* line 290, /home/deploy/rempelonrails/app/assets/stylesheets/_normalize.css.scss */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */ }
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+/* line 302, /home/deploy/rempelonrails/app/assets/stylesheets/_normalize.css.scss */
+button[disabled],
+html input[disabled] {
+  cursor: default; }
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+/* line 311, /home/deploy/rempelonrails/app/assets/stylesheets/_normalize.css.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+/* line 322, /home/deploy/rempelonrails/app/assets/stylesheets/_normalize.css.scss */
+input {
+  line-height: normal; }
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+/* line 334, /home/deploy/rempelonrails/app/assets/stylesheets/_normalize.css.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+/* line 346, /home/deploy/rempelonrails/app/assets/stylesheets/_normalize.css.scss */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome.
+ */
+/* line 356, /home/deploy/rempelonrails/app/assets/stylesheets/_normalize.css.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  box-sizing: content-box;
+  /* 2 */ }
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+/* line 367, /home/deploy/rempelonrails/app/assets/stylesheets/_normalize.css.scss */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+/* line 376, /home/deploy/rempelonrails/app/assets/stylesheets/_normalize.css.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+/* line 387, /home/deploy/rempelonrails/app/assets/stylesheets/_normalize.css.scss */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+/* line 396, /home/deploy/rempelonrails/app/assets/stylesheets/_normalize.css.scss */
+textarea {
+  overflow: auto; }
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+/* line 405, /home/deploy/rempelonrails/app/assets/stylesheets/_normalize.css.scss */
+optgroup {
+  font-weight: bold; }
+
+/* Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+/* line 416, /home/deploy/rempelonrails/app/assets/stylesheets/_normalize.css.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 421, /home/deploy/rempelonrails/app/assets/stylesheets/_normalize.css.scss */
+td,
+th {
+  padding: 0; }
+
+/* line 27, /home/deploy/rempelonrails/app/assets/stylesheets/application.css.scss */
+* {
+  box-sizing: border-box; }
+
+/* line 31, /home/deploy/rempelonrails/app/assets/stylesheets/application.css.scss */
+body {
+  font-family: 'Bitter', serif;
+  background-color: #e9e9e9; }
+
+/* line 36, /home/deploy/rempelonrails/app/assets/stylesheets/application.css.scss */
+.wrapper {
+  width: 90%;
+  margin: 0 auto; }
+
+/* line 41, /home/deploy/rempelonrails/app/assets/stylesheets/application.css.scss */
+.skinny_wrapper {
+  width: 80%;
+  max-width: 760px;
+  margin: 0 auto; }
+
+/* line 47, /home/deploy/rempelonrails/app/assets/stylesheets/application.css.scss */
+.wrapper_padding {
+  padding: 4rem 0; }
+
+/* line 51, /home/deploy/rempelonrails/app/assets/stylesheets/application.css.scss */
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table; }
+
+/* line 57, /home/deploy/rempelonrails/app/assets/stylesheets/application.css.scss */
+.clearfix:after {
+  clear: both; }
+
+/* line 61, /home/deploy/rempelonrails/app/assets/stylesheets/application.css.scss */
+.hidden {
+  display: none; }
+
+/* line 65, /home/deploy/rempelonrails/app/assets/stylesheets/application.css.scss */
+.notice, .alert {
+  text-align: center;
+  padding: 1em 0;
+  border-bottom: 1px solid #e9e9e9; }
+
+/* line 71, /home/deploy/rempelonrails/app/assets/stylesheets/application.css.scss */
+h1, h2, h3, h4, h5, h6, p, ul, li {
+  color: #424652; }
+
+/* line 75, /home/deploy/rempelonrails/app/assets/stylesheets/application.css.scss */
+h1 {
+  font-size: 2.5rem; }
+
+/* line 79, /home/deploy/rempelonrails/app/assets/stylesheets/application.css.scss */
+h2 {
+  font-size: 2rem; }
+
+/* line 83, /home/deploy/rempelonrails/app/assets/stylesheets/application.css.scss */
+h3 {
+  font-size: 1.75rem; }
+
+/* line 87, /home/deploy/rempelonrails/app/assets/stylesheets/application.css.scss */
+h4 {
+  font-size: 1.375rem; }
+
+/* line 91, /home/deploy/rempelonrails/app/assets/stylesheets/application.css.scss */
+h5 {
+  font-size: 1.25rem; }
+
+/* line 95, /home/deploy/rempelonrails/app/assets/stylesheets/application.css.scss */
+h6 {
+  font-size: 1rem; }
+
+/* line 99, /home/deploy/rempelonrails/app/assets/stylesheets/application.css.scss */
+p, li {
+  font-size: 1.1rem;
+  line-height: 1.75; }
+
+/* line 104, /home/deploy/rempelonrails/app/assets/stylesheets/application.css.scss */
+p, ul, ol {
+  margin: 0 0 1.6em 0; }
+
+/* line 108, /home/deploy/rempelonrails/app/assets/stylesheets/application.css.scss */
+hr {
+  width: 3em;
+  display: block;
+  height: 2px;
+  border: 0;
+  border-top: 2px solid #c00;
+  margin: 2rem 0; }
+
+/* line 117, /home/deploy/rempelonrails/app/assets/stylesheets/application.css.scss */
+#main_navigation {
+  padding: 2.5em 5%;
+  border-bottom: 1px solid #D5D5D5;
+  background-color: #fff;
+  box-shadow: 0 10px 15px -8px #000; }
+  /* line 122, /home/deploy/rempelonrails/app/assets/stylesheets/application.css.scss */
+  #main_navigation .active {
+    color: #c00; }
+  /* line 125, /home/deploy/rempelonrails/app/assets/stylesheets/application.css.scss */
+  #main_navigation .name {
+    font-weight: 700;
+    font-size: .9em;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    border: 2px solid #D5D5D5;
+    padding: 1rem;
+    text-decoration: none;
+    color: #424652;
+    float: left; }
+  /* line 136, /home/deploy/rempelonrails/app/assets/stylesheets/application.css.scss */
+  #main_navigation nav {
+    float: right;
+    padding-top: 1.5rem; }
+    /* line 139, /home/deploy/rempelonrails/app/assets/stylesheets/application.css.scss */
+    #main_navigation nav a {
+      color: #424652;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-size: 1rem; }
+      /* line 144, /home/deploy/rempelonrails/app/assets/stylesheets/application.css.scss */
+      #main_navigation nav a:hover {
+        color: #c00; }
+
+/* line 151, /home/deploy/rempelonrails/app/assets/stylesheets/application.css.scss */
+#page_title {
+  text-align: center;
+  border-bottom: 1px solid #D5D5D5;
+  padding: 3em 0;
+  font-size: 1rem;
+  text-transform: uppercase; }
+
+/* line 159, /home/deploy/rempelonrails/app/assets/stylesheets/application.css.scss */
+#main_footer {
+  padding: 2.5em 5%;
+  border-top: 1px solid #D5D5D5;
+  background-color: #fff;
+  box-shadow: 0 -10px 15px -8px #000; }
+  /* line 164, /home/deploy/rempelonrails/app/assets/stylesheets/application.css.scss */
+  #main_footer .copyright {
+    float: left;
+    font-size: .9em;
+    margin: 0; }
+  /* line 169, /home/deploy/rempelonrails/app/assets/stylesheets/application.css.scss */
+  #main_footer nav {
+    float: right; }
+    /* line 171, /home/deploy/rempelonrails/app/assets/stylesheets/application.css.scss */
+    #main_footer nav i {
+      color: #424652;
+      margin-left: 1em;
+      padding-top: .2em; }
+      /* line 175, /home/deploy/rempelonrails/app/assets/stylesheets/application.css.scss */
+      #main_footer nav i:hover {
+        color: #c00; }
+
+/* line 182, /home/deploy/rempelonrails/app/assets/stylesheets/application.css.scss */
+input[type="text"], input[type="email"], input[type="password"], textarea {
+  width: 100%;
+  max-width: 100%;
+  height: 3em;
+  border: 2px solid #D5D5D5;
+  padding: 1em;
+  margin: .5em 0 2em 0; }
+
+/* line 191, /home/deploy/rempelonrails/app/assets/stylesheets/application.css.scss */
+textarea {
+  min-height: 20em;
+  margin: 0.5em 0 2em 0 !important; }
+
+/* line 196, /home/deploy/rempelonrails/app/assets/stylesheets/application.css.scss */
+input[type="submit"], .button {
+  outline: none;
+  background: transparent;
+  border: 2px solid #D5D5D5;
+  text-align: center;
+  font-style: 1em;
+  color: #424652;
+  text-decoration: none;
+  padding: 1em 2em; }
+  /* line 205, /home/deploy/rempelonrails/app/assets/stylesheets/application.css.scss */
+  input[type="submit"]:hover, .button:hover {
+    border: 2px solid #c00;
+    color: #c00; }
+
+/* line 211, /home/deploy/rempelonrails/app/assets/stylesheets/application.css.scss */
+.project_button {
+  background: #c00;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 1em 2em; }
+
+/* line 218, /home/deploy/rempelonrails/app/assets/stylesheets/application.css.scss */
+.button_wrapper {
+  margin: 4em 0 0 0;
+  text-align: center; }
+
+/* line 7, /home/deploy/rempelonrails/app/assets/stylesheets/_welcome.css.scss */
+.col-1, .col-2, .col-3 {
+  float: left; }
+
+/* line 11, /home/deploy/rempelonrails/app/assets/stylesheets/_welcome.css.scss */
+.col-1 {
+  width: 45%;
+  padding: 0 5% 0 2.5%; }
+
+/* line 16, /home/deploy/rempelonrails/app/assets/stylesheets/_welcome.css.scss */
+.col-2, .col-3 {
+  width: 27.5%;
+  padding: 0 2.5%; }
+
+/* line 22, /home/deploy/rempelonrails/app/assets/stylesheets/_welcome.css.scss */
+.homepage_content h2 {
+  font-size: 1.1rem;
+  text-transform: uppercase; }
+/* line 27, /home/deploy/rempelonrails/app/assets/stylesheets/_welcome.css.scss */
+.homepage_content h3 {
+  font-size: 1.35em;
+  font-weight: 400;
+  margin-bottom: .5em; }
+/* line 33, /home/deploy/rempelonrails/app/assets/stylesheets/_welcome.css.scss */
+.homepage_content a {
+  text-decoration: none;
+  color: #424652; }
+  /* line 36, /home/deploy/rempelonrails/app/assets/stylesheets/_welcome.css.scss */
+  .homepage_content a:hover {
+    color: #c00; }
+/* line 40, /home/deploy/rempelonrails/app/assets/stylesheets/_welcome.css.scss */
+.homepage_content .date {
+  font-size: .85em;
+  margin-bottom: 2em;
+  color: #9a9da4; }
+/* line 45, /home/deploy/rempelonrails/app/assets/stylesheets/_welcome.css.scss */
+.homepage_content p {
+  margin: 0 0 .75em 0; }
+
+/* line 50, /home/deploy/rempelonrails/app/assets/stylesheets/_welcome.css.scss */
+.about {
+  padding: 0 7.5% 0 0; }
+  /* line 52, /home/deploy/rempelonrails/app/assets/stylesheets/_welcome.css.scss */
+  .about a {
+    color: #c00;
+    font-weight: 700;
+    text-decoration: none; }
+
+/* line 7, /home/deploy/rempelonrails/app/assets/stylesheets/_posts_projects.css.scss */
+#posts_wrapper {
+  padding: 3em 0; }
+  /* line 9, /home/deploy/rempelonrails/app/assets/stylesheets/_posts_projects.css.scss */
+  #posts_wrapper .post {
+    text-align: center; }
+    /* line 11, /home/deploy/rempelonrails/app/assets/stylesheets/_posts_projects.css.scss */
+    #posts_wrapper .post .date {
+      font-size: .9em;
+      margin: 0; }
+    /* line 15, /home/deploy/rempelonrails/app/assets/stylesheets/_posts_projects.css.scss */
+    #posts_wrapper .post h2 {
+      margin: 0;
+      font-size: 2em;
+      text-transform: uppercase; }
+      /* line 19, /home/deploy/rempelonrails/app/assets/stylesheets/_posts_projects.css.scss */
+      #posts_wrapper .post h2 a {
+        text-decoration: none;
+        color: #424652; }
+        /* line 22, /home/deploy/rempelonrails/app/assets/stylesheets/_posts_projects.css.scss */
+        #posts_wrapper .post h2 a:hover {
+          color: #c00; }
+    /* line 27, /home/deploy/rempelonrails/app/assets/stylesheets/_posts_projects.css.scss */
+    #posts_wrapper .post hr {
+      margin: 3em auto; }
+
+/* line 35, /home/deploy/rempelonrails/app/assets/stylesheets/_posts_projects.css.scss */
+#post_show_content header {
+  text-align: center; }
+  /* line 37, /home/deploy/rempelonrails/app/assets/stylesheets/_posts_projects.css.scss */
+  #post_show_content header .date {
+    font-style: .9em;
+    color: #9a9da4;
+    margin: 0; }
+  /* line 42, /home/deploy/rempelonrails/app/assets/stylesheets/_posts_projects.css.scss */
+  #post_show_content header h1 {
+    margin: 0; }
+/* line 46, /home/deploy/rempelonrails/app/assets/stylesheets/_posts_projects.css.scss */
+#post_show_content hr {
+  margin: 3em auto; }
+
+/* line 51, /home/deploy/rempelonrails/app/assets/stylesheets/_posts_projects.css.scss */
+#share_box {
+  text-align: center; }
+  /* line 53, /home/deploy/rempelonrails/app/assets/stylesheets/_posts_projects.css.scss */
+  #share_box p {
+    padding-bottom: 0 0 1em 0;
+    margin: 0;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #424652;
+    font-size: .8em; }
+  /* line 61, /home/deploy/rempelonrails/app/assets/stylesheets/_posts_projects.css.scss */
+  #share_box i {
+    color: #424652;
+    padding: 1em 1.5em; }
+    /* line 64, /home/deploy/rempelonrails/app/assets/stylesheets/_posts_projects.css.scss */
+    #share_box i:hover {
+      color: #c00;
+      cursor: pointer; }
+
+/* line 71, /home/deploy/rempelonrails/app/assets/stylesheets/_posts_projects.css.scss */
+#admin_links {
+  border-top: 1px solid #D5D5D5;
+  border-bottom: 1px solid #D5D5D5;
+  text-align: center;
+  padding: 1em 0;
+  margin: 3em 0; }
+  /* line 77, /home/deploy/rempelonrails/app/assets/stylesheets/_posts_projects.css.scss */
+  #admin_links a {
+    color: #9a9da4;
+    margin: 0 1em;
+    font-weight: 700;
+    font-style: .8em;
+    text-transform: uppercase;
+    text-decoration: none; }
+    /* line 84, /home/deploy/rempelonrails/app/assets/stylesheets/_posts_projects.css.scss */
+    #admin_links a:hover {
+      color: #c00; }
+
+/* line 92, /home/deploy/rempelonrails/app/assets/stylesheets/_posts_projects.css.scss */
+.pagination:before,
+.pagination:after {
+  content: " ";
+  display: table; }
+
+/* line 98, /home/deploy/rempelonrails/app/assets/stylesheets/_posts_projects.css.scss */
+.pagination:after {
+  clear: both; }
+
+/* line 102, /home/deploy/rempelonrails/app/assets/stylesheets/_posts_projects.css.scss */
+.pagination {
+  text-align: center;
+  margin: 0 0 3em 0; }
+  /* line 105, /home/deploy/rempelonrails/app/assets/stylesheets/_posts_projects.css.scss */
+  .pagination a, .pagination .previous_page, .pagination .current, .pagination .next_page {
+    padding: .75em 1em;
+    margin: 0.5em;
+    border-radius: .15em;
+    line-height: 20px;
+    text-decoration: none;
+    background: #ffffff;
+    font-weight: 700;
+    font-size: .7em;
+    font-style: normal;
+    color: #424652; }
+    /* line 116, /home/deploy/rempelonrails/app/assets/stylesheets/_posts_projects.css.scss */
+    .pagination a:hover, .pagination .previous_page:hover, .pagination .current:hover, .pagination .next_page:hover {
+      background: #c00;
+      color: #ffffff; }
+  /* line 121, /home/deploy/rempelonrails/app/assets/stylesheets/_posts_projects.css.scss */
+  .pagination .current {
+    background: #c00;
+    color: #ffffff; }
+  /* line 125, /home/deploy/rempelonrails/app/assets/stylesheets/_posts_projects.css.scss */
+  .pagination .disabled {
+    color: #C0C0C0; }
+    /* line 127, /home/deploy/rempelonrails/app/assets/stylesheets/_posts_projects.css.scss */
+    .pagination .disabled:hover {
+      color: #C0C0C0;
+      background: #ffffff; }
+
+/* 
+   Some simple Github-like styles, with syntax highlighting CSS via Pygments.
+*/
+/* line 5, /home/deploy/rempelonrails/app/assets/stylesheets/pygments.css.scss */
+pre {
+  background-color: #D5D5D5;
+  padding: 10px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  overflow: auto; }
+
+/* line 14, /home/deploy/rempelonrails/app/assets/stylesheets/pygments.css.scss */
+code {
+  background-color: #D5D5D5;
+  padding: 1px 3px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px; }
+
+/* line 22, /home/deploy/rempelonrails/app/assets/stylesheets/pygments.css.scss */
+.hll {
+  background-color: #ffffcc; }
+
+/* line 23, /home/deploy/rempelonrails/app/assets/stylesheets/pygments.css.scss */
+.c {
+  color: #888888; }
+
+/* Comment */
+/* line 24, /home/deploy/rempelonrails/app/assets/stylesheets/pygments.css.scss */
+.err {
+  color: #a61717;
+  background-color: #e3d2d2; }
+
+/* Error */
+/* line 25, /home/deploy/rempelonrails/app/assets/stylesheets/pygments.css.scss */
+.k {
+  color: #008800;
+  font-weight: bold; }
+
+/* Keyword */
+/* line 26, /home/deploy/rempelonrails/app/assets/stylesheets/pygments.css.scss */
+.cm {
+  color: #888888; }
+
+/* Comment.Multiline */
+/* line 27, /home/deploy/rempelonrails/app/assets/stylesheets/pygments.css.scss */
+.cp {
+  color: #cc0000;
+  font-weight: bold; }
+
+/* Comment.Preproc */
+/* line 28, /home/deploy/rempelonrails/app/assets/stylesheets/pygments.css.scss */
+.c1 {
+  color: #888888; }
+
+/* Comment.Single */
+/* line 29, /home/deploy/rempelonrails/app/assets/stylesheets/pygments.css.scss */
+.cs {
+  color: #cc0000;
+  font-weight: bold;
+  background-color: #fff0f0; }
+
+/* Comment.Special */
+/* line 30, /home/deploy/rempelonrails/app/assets/stylesheets/pygments.css.scss */
+.gd {
+  color: #000000;
+  background-color: #ffdddd; }
+
+/* Generic.Deleted */
+/* line 31, /home/deploy/rempelonrails/app/assets/stylesheets/pygments.css.scss */
+.ge {
+  font-style: italic; }
+
+/* Generic.Emph */
+/* line 32, /home/deploy/rempelonrails/app/assets/stylesheets/pygments.css.scss */
+.gr {
+  color: #aa0000; }
+
+/* Generic.Error */
+/* line 33, /home/deploy/rempelonrails/app/assets/stylesheets/pygments.css.scss */
+.gh {
+  color: #303030; }
+
+/* Generic.Heading */
+/* line 34, /home/deploy/rempelonrails/app/assets/stylesheets/pygments.css.scss */
+.gi {
+  color: #000000;
+  background-color: #ddffdd; }
+
+/* Generic.Inserted */
+/* line 35, /home/deploy/rempelonrails/app/assets/stylesheets/pygments.css.scss */
+.go {
+  color: #888888; }
+
+/* Generic.Output */
+/* line 36, /home/deploy/rempelonrails/app/assets/stylesheets/pygments.css.scss */
+.gp {
+  color: #555555; }
+
+/* Generic.Prompt */
+/* line 37, /home/deploy/rempelonrails/app/assets/stylesheets/pygments.css.scss */
+.gs {
+  font-weight: bold; }
+
+/* Generic.Strong */
+/* line 38, /home/deploy/rempelonrails/app/assets/stylesheets/pygments.css.scss */
+.gu {
+  color: #606060; }
+
+/* Generic.Subheading */
+/* line 39, /home/deploy/rempelonrails/app/assets/stylesheets/pygments.css.scss */
+.gt {
+  color: #aa0000; }
+
+/* Generic.Traceback */
+/* line 40, /home/deploy/rempelonrails/app/assets/stylesheets/pygments.css.scss */
+.kc {
+  color: #008800;
+  font-weight: bold; }
+
+/* Keyword.Constant */
+/* line 41, /home/deploy/rempelonrails/app/assets/stylesheets/pygments.css.scss */
+.kd {
+  color: #008800;
+  font-weight: bold; }
+
+/* Keyword.Declaration */
+/* line 42, /home/deploy/rempelonrails/app/assets/stylesheets/pygments.css.scss */
+.kn {
+  color: #008800;
+  font-weight: bold; }
+
+/* Keyword.Namespace */
+/* line 43, /home/deploy/rempelonrails/app/assets/stylesheets/pygments.css.scss */
+.kp {
+  color: #008800; }
+
+/* Keyword.Pseudo */
+/* line 44, /home/deploy/rempelonrails/app/assets/stylesheets/pygments.css.scss */
+.kr {
+  color: #008800;
+  font-weight: bold; }
+
+/* Keyword.Reserved */
+/* line 45, /home/deploy/rempelonrails/app/assets/stylesheets/pygments.css.scss */
+.kt {
+  color: #888888;
+  font-weight: bold; }
+
+/* Keyword.Type */
+/* line 46, /home/deploy/rempelonrails/app/assets/stylesheets/pygments.css.scss */
+.m {
+  color: #0000DD;
+  font-weight: bold; }
+
+/* Literal.Number */
+/* line 47, /home/deploy/rempelonrails/app/assets/stylesheets/pygments.css.scss */
+.s {
+  color: #dd2200;
+  background-color: #fff0f0; }
+
+/* Literal.String */
+/* line 48, /home/deploy/rempelonrails/app/assets/stylesheets/pygments.css.scss */
+.na {
+  color: #336699; }
+
+/* Name.Attribute */
+/* line 49, /home/deploy/rempelonrails/app/assets/stylesheets/pygments.css.scss */
+.nb {
+  color: #003388; }
+
+/* Name.Builtin */
+/* line 50, /home/deploy/rempelonrails/app/assets/stylesheets/pygments.css.scss */
+.nc {
+  color: #bb0066;
+  font-weight: bold; }
+
+/* Name.Class */
+/* line 51, /home/deploy/rempelonrails/app/assets/stylesheets/pygments.css.scss */
+.no {
+  color: #003366;
+  font-weight: bold; }
+
+/* Name.Constant */
+/* line 52, /home/deploy/rempelonrails/app/assets/stylesheets/pygments.css.scss */
+.nd {
+  color: #555555; }
+
+/* Name.Decorator */
+/* line 53, /home/deploy/rempelonrails/app/assets/stylesheets/pygments.css.scss */
+.ne {
+  color: #bb0066;
+  font-weight: bold; }
+
+/* Name.Exception */
+/* line 54, /home/deploy/rempelonrails/app/assets/stylesheets/pygments.css.scss */
+.nf {
+  color: #0066bb;
+  font-weight: bold; }
+
+/* Name.Function */
+/* line 55, /home/deploy/rempelonrails/app/assets/stylesheets/pygments.css.scss */
+.nl {
+  color: #336699;
+  font-style: italic; }
+
+/* Name.Label */
+/* line 56, /home/deploy/rempelonrails/app/assets/stylesheets/pygments.css.scss */
+.nn {
+  color: #bb0066;
+  font-weight: bold; }
+
+/* Name.Namespace */
+/* line 57, /home/deploy/rempelonrails/app/assets/stylesheets/pygments.css.scss */
+.py {
+  color: #336699;
+  font-weight: bold; }
+
+/* Name.Property */
+/* line 58, /home/deploy/rempelonrails/app/assets/stylesheets/pygments.css.scss */
+.nt {
+  color: #bb0066;
+  font-weight: bold; }
+
+/* Name.Tag */
+/* line 59, /home/deploy/rempelonrails/app/assets/stylesheets/pygments.css.scss */
+.nv {
+  color: #336699; }
+
+/* Name.Variable */
+/* line 60, /home/deploy/rempelonrails/app/assets/stylesheets/pygments.css.scss */
+.ow {
+  color: #008800; }
+
+/* Operator.Word */
+/* line 61, /home/deploy/rempelonrails/app/assets/stylesheets/pygments.css.scss */
+.w {
+  color: #bbbbbb; }
+
+/* Text.Whitespace */
+/* line 62, /home/deploy/rempelonrails/app/assets/stylesheets/pygments.css.scss */
+.mf {
+  color: #0000DD;
+  font-weight: bold; }
+
+/* Literal.Number.Float */
+/* line 63, /home/deploy/rempelonrails/app/assets/stylesheets/pygments.css.scss */
+.mh {
+  color: #0000DD;
+  font-weight: bold; }
+
+/* Literal.Number.Hex */
+/* line 64, /home/deploy/rempelonrails/app/assets/stylesheets/pygments.css.scss */
+.mi {
+  color: #0000DD;
+  font-weight: bold; }
+
+/* Literal.Number.Integer */
+/* line 65, /home/deploy/rempelonrails/app/assets/stylesheets/pygments.css.scss */
+.mo {
+  color: #0000DD;
+  font-weight: bold; }
+
+/* Literal.Number.Oct */
+/* line 66, /home/deploy/rempelonrails/app/assets/stylesheets/pygments.css.scss */
+.sb {
+  color: #dd2200;
+  background-color: #fff0f0; }
+
+/* Literal.String.Backtick */
+/* line 67, /home/deploy/rempelonrails/app/assets/stylesheets/pygments.css.scss */
+.sc {
+  color: #dd2200;
+  background-color: #fff0f0; }
+
+/* Literal.String.Char */
+/* line 68, /home/deploy/rempelonrails/app/assets/stylesheets/pygments.css.scss */
+.sd {
+  color: #dd2200;
+  background-color: #fff0f0; }
+
+/* Literal.String.Doc */
+/* line 69, /home/deploy/rempelonrails/app/assets/stylesheets/pygments.css.scss */
+.s2 {
+  color: #dd2200;
+  background-color: #fff0f0; }
+
+/* Literal.String.Double */
+/* line 70, /home/deploy/rempelonrails/app/assets/stylesheets/pygments.css.scss */
+.se {
+  color: #0044dd;
+  background-color: #fff0f0; }
+
+/* Literal.String.Escape */
+/* line 71, /home/deploy/rempelonrails/app/assets/stylesheets/pygments.css.scss */
+.sh {
+  color: #dd2200;
+  background-color: #fff0f0; }
+
+/* Literal.String.Heredoc */
+/* line 72, /home/deploy/rempelonrails/app/assets/stylesheets/pygments.css.scss */
+.si {
+  color: #3333bb;
+  background-color: #fff0f0; }
+
+/* Literal.String.Interpol */
+/* line 73, /home/deploy/rempelonrails/app/assets/stylesheets/pygments.css.scss */
+.sx {
+  color: #22bb22;
+  background-color: #f0fff0; }
+
+/* Literal.String.Other */
+/* line 74, /home/deploy/rempelonrails/app/assets/stylesheets/pygments.css.scss */
+.sr {
+  color: #008800;
+  background-color: #fff0ff; }
+
+/* Literal.String.Regex */
+/* line 75, /home/deploy/rempelonrails/app/assets/stylesheets/pygments.css.scss */
+.s1 {
+  color: #dd2200;
+  background-color: #fff0f0; }
+
+/* Literal.String.Single */
+/* line 76, /home/deploy/rempelonrails/app/assets/stylesheets/pygments.css.scss */
+.ss {
+  color: #aa6600;
+  background-color: #fff0f0; }
+
+/* Literal.String.Symbol */
+/* line 77, /home/deploy/rempelonrails/app/assets/stylesheets/pygments.css.scss */
+.bp {
+  color: #003388; }
+
+/* Name.Builtin.Pseudo */
+/* line 78, /home/deploy/rempelonrails/app/assets/stylesheets/pygments.css.scss */
+.vc {
+  color: #336699; }
+
+/* Name.Variable.Class */
+/* line 79, /home/deploy/rempelonrails/app/assets/stylesheets/pygments.css.scss */
+.vg {
+  color: #dd7700; }
+
+/* Name.Variable.Global */
+/* line 80, /home/deploy/rempelonrails/app/assets/stylesheets/pygments.css.scss */
+.vi {
+  color: #3333bb; }
+
+/* Name.Variable.Instance */
+/* line 81, /home/deploy/rempelonrails/app/assets/stylesheets/pygments.css.scss */
+.il {
+  color: #0000DD;
+  font-weight: bold; }
+
+/* Literal.Number.Integer.Long */
