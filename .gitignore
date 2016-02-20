@@ -17,6 +17,7 @@
 /tmp
 /.rbenv-vars
 /config/database.yml
+/reconf.sh
 
 # Github Rails gitignore
 *.rbc
