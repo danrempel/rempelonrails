@@ -5,10 +5,10 @@ SitemapGenerator::Sitemap.default_host = 'http://www.rempelonrails.com'
 SitemapGenerator::Sitemap.public_path = 'tmp/sitemaps/'
 
 SitemapGenerator::Sitemap.create do
-  add root_path, :changefreq => 'weekly', :priority => 0.9
-  add new_contact_path
-  add posts_path, :changefreq => 'weekly'
-  add projects_path, :changefreq => 'weekly'
+  add '/', :changefreq => 'weekly', :priority => 0.9
+  add '/contacts/new'   
+  add '/posts', :changefreq => 'weekly'
+  add '/projects', :changefreq => 'weekly'
 
   Post.find_each do |post|
   	add post_path(post.slug), lastmod: post.updated_at
