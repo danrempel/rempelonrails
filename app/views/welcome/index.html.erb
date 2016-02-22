@@ -10,7 +10,8 @@
 		<h2>Recent Posts</h2>
 		<hr>
 		<% @posts.each do |post| %>
-			<h3><%= link_to post.title, post %></h3>
+      <h3><%= link_to post.title, post %></h3>
+      <h4><%= post.subtitle %></h4>
 			<p class="date"><%= post.created_at.strftime("%B %d, %Y") %></p>
 		<%end %>
 	</div>
