@@ -1,11 +1,9 @@
-<h1 id="page_title">Blog</h1>
-
 <div id="posts_wrapper" class="skinny_wrapper">
 	<% @posts.each do |post| %>
 		<div class="post">
-			<p class="date"><%= post.created_at.strftime("%B %d, %Y") %></p>
       <h2><%= link_to post.title, post %></h2>
       <h4><%= post.subtitle %></h4>
+      <p class="date"><%= post.created_at.strftime("%B %d, %Y") %></p>
 			<hr>
 		</div>
 	<% end %>

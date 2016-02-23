@@ -5,17 +5,17 @@ $highlight: #c00;
 $border: #D5D5D5;
 
 #posts_wrapper {
-	padding: 3em 0;
+	padding-top: 4em;
 	.post {
-		text-align: center;
+		text-align: left;
 		.date {
 			font-size: .9em;
 			margin: 0;
 		}
 		h2 {
 			margin: 0;
-			font-size: 2em;
-			text-transform: uppercase;
+			font-size: 1.4em;
+			text-transform: capitalize;
 			a {
 				text-decoration: none;
 				color: $dark;
@@ -24,6 +24,14 @@ $border: #D5D5D5;
 				}
 			}
 		}
+    h4 {
+      color: #707070;
+      font-size: 1.1em;
+      font-weight: 400;
+      margin-top: 1.2em;
+      margin-bottom: 1em;
+      font-family: 'Droid Serif', 'Georgia', 'Cambria', 'Times New Roman', serif;
+    }
 		hr {
 			margin: 3em auto;
 		}
@@ -41,8 +49,12 @@ $border: #D5D5D5;
 		}
 		h1 {
 			margin: 0;
+      font-size: 2.3rem;
 		}
 	}
+  p {
+    font-family: 'Georgia', 'Cambria', 'Times New Roman', serif;
+  }
 	hr {
 			margin: 3em auto;
 		}
@@ -54,7 +66,7 @@ $border: #D5D5D5;
 		padding-bottom: 0 0 1em 0;
 		margin: 0;
 		font-weight: 700;
-		text-transform: uppercase;
+		text-transform: capitalize;
 		color: $dark;
 		font-size: .8em;
 	}
