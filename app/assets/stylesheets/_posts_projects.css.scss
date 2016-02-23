@@ -14,7 +14,7 @@ $border: #D5D5D5;
 		}
 		h2 {
 			margin: 0;
-			font-size: 1.4em;
+			font-size: 1.5em;
 			text-transform: capitalize;
 			a {
 				text-decoration: none;
@@ -26,7 +26,7 @@ $border: #D5D5D5;
 		}
     h4 {
       color: #707070;
-      font-size: 1.1em;
+      font-size: 1.05em;
       font-weight: 400;
       margin-top: 1.2em;
       margin-bottom: 1em;
@@ -36,6 +36,12 @@ $border: #D5D5D5;
 			margin: 3em auto;
 		}
 	}
+  .project {
+    text-align: center;
+    h2 {
+      font-size: 2em;
+    }
+  }
 }
 
 // ------- Posts Show
@@ -45,7 +51,7 @@ $border: #D5D5D5;
 		.date {
 			font-style: .9em;
 			color: $light;
-			margin: 0;
+			margin: 20px 0 0;
 		}
 		h1 {
 			margin: 0;
@@ -69,6 +75,10 @@ $border: #D5D5D5;
 		text-transform: capitalize;
 		color: $dark;
 		font-size: .8em;
+    .redshare {
+      text-transform: uppercase;
+      margin-right: 5px;
+    }
 	}
 	i {
 		color: $dark;

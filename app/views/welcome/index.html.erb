@@ -2,16 +2,14 @@
 	<div class="col-1 about homepage_content">
 		<h2>About</h2>
 		<hr>
-		<p>My name is Dan Rempel and I am a web developer living in Edmonton, Alberta. By day I work as a Sr. Client Support Technician for the University of Alberta, by night I freelance web development projects for my own company, <a href="http://www.dare-studios.com" target="_blank">Dare Studios</a>.</p>
-		<p>I am absolutely <strong>in love</strong> with Ruby on Rails and I am dedicated to improving my expertise. It is my dream to someday work with Rails as a career.</p>
-		<p>My hope is to use this blog to further solidify the things I'm learning for myself while also hopefully giving back to the community that has been so giving to me. I know what it's like starting out on this path and because of that I have a familiarity with the kinds of things that were truly useful. This blog will be geared towards beginners like myself. Please feel free to comment on anything or send me a quick email if you spot something I've done wrong or if you know of a better way to achieve something! I am always looking for ways to improve my skills and I really appreciate the feedback. Likewise if you are a beginner and would like to see an article about a certain technology let me know, I'd love to put the time and research in.</p>
+    <p>My name is Dan Rempel and I am a web developer living in Edmonton, Alberta. By day I work as a Sr. Client Support Technician for the University of Alberta, by night I freelance web development projects under my own brand, <a href="http://www.dare-studios.com" target="_blank">Dare Studios</a>.</p><br>
+		<p>I am absolutely <strong>in love</strong> with Ruby on Rails and I am dedicated to improving my expertise. It is my dream to someday work with Rails as a career. My hope is to use this blog to further solidify the things I'm learning for myself while also hopefully giving back to the community that has been so giving to me. I know what it's like starting out on this path and because of that I have a familiarity with the kinds of things that were truly useful. This blog will be geared towards beginners like myself. Please feel free to comment on anything or send me a quick email if you spot something I've done wrong or if you know of a better way to achieve something! I am always looking for ways to improve my skills and I really appreciate the feedback. Likewise if you are a beginner and would like to see an article about a certain technology let me know, I'd love to put the time and research in.</p>
 	</div>
 	<div class="col-2 homepage_content">
 		<h2>Recent Posts</h2>
 		<hr>
 		<% @posts.each do |post| %>
       <h3><%= link_to post.title, post %></h3>
-      <h4><%= post.subtitle %></h4>
 			<p class="date"><%= post.created_at.strftime("%B %d, %Y") %></p>
 		<%end %>
 	</div>
