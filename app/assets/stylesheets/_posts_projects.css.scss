@@ -60,6 +60,14 @@ $border: #D5D5D5;
 	}
   p {
     font-family: 'Georgia', 'Cambria', 'Times New Roman', serif;
+    a {
+      color: $highlight;
+      font-weight: 700;
+      text-decoration: none;
+      &:hover {
+        color: black;
+      }
+    }
   }
 	hr {
 			margin: 3em auto;
