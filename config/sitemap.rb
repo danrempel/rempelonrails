@@ -8,8 +8,8 @@ SitemapGenerator::Sitemap.create do
   add '/posts', :changefreq => 'weekly'
   add '/projects', :changefreq => 'weekly'
 
-  Post.find_each do |post|
-  	add post_path(post.slug), lastmod: post.updated_at
-  end
+  #Post.find_each do |post|
+  #	add post_path(post.slug), lastmod: post.updated_at
+  #end
 SitemapGenerator::Sitemap.ping_search_engines # Not needed if you use the rake tasks
 end

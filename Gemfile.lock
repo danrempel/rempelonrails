@@ -182,8 +182,6 @@ GEM
       json (~> 1.7, >= 1.7.7)
       rdoc (~> 4.0)
     shellany (0.0.1)
-    sitemap_generator (5.1.0)
-      builder
     slop (3.6.0)
     spring (1.6.3)
     sprockets (3.5.2)
@@ -240,7 +238,6 @@ DEPENDENCIES
   redcarpet (~> 3.3, >= 3.3.4)
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
-  sitemap_generator (~> 5.1)
   spring
   sqlite3
   turbolinks
