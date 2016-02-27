@@ -522,3 +522,20 @@ I, [2016-02-25T10:53:38.240969 #1678]  INFO -- : worker=0 spawned pid=1678
 I, [2016-02-25T10:53:38.241118 #1678]  INFO -- : worker=0 ready
 I, [2016-02-25T10:53:38.241929 #1680]  INFO -- : worker=1 spawned pid=1680
 I, [2016-02-25T10:53:38.242080 #1680]  INFO -- : worker=1 ready
+I, [2016-02-25T11:17:40.717119 #1674]  INFO -- : reaped #<Process::Status: pid 1678 exit 0> worker=0
+I, [2016-02-25T11:17:40.717919 #1674]  INFO -- : reaped #<Process::Status: pid 1680 exit 0> worker=1
+I, [2016-02-25T11:17:40.718026 #1674]  INFO -- : master complete
+E, [2016-02-25T11:17:40.803535 #1223] ERROR -- : reaped #<Process::Status: pid 1674 exit 0> exec()-ed
+I, [2016-02-25T11:17:41.732338 #1223]  INFO -- : reaped #<Process::Status: pid 1228 exit 0> worker=1
+I, [2016-02-25T11:17:41.832781 #1223]  INFO -- : reaped #<Process::Status: pid 1226 exit 0> worker=0
+I, [2016-02-25T11:17:41.832903 #1223]  INFO -- : master complete
+I, [2016-02-25T11:20:23.063655 #1215]  INFO -- : Refreshing Gem list
+I, [2016-02-25T11:20:27.202103 #1215]  INFO -- : unlinking existing socket=/home/deploy/rempelonrails/shared/sockets/unicorn.sock
+I, [2016-02-25T11:20:27.202457 #1215]  INFO -- : listening on addr=/home/deploy/rempelonrails/shared/sockets/unicorn.sock fd=11
+I, [2016-02-25T11:20:27.202594 #1215]  INFO -- : worker=0 spawning...
+I, [2016-02-25T11:20:27.204293 #1215]  INFO -- : worker=1 spawning...
+I, [2016-02-25T11:20:27.206049 #1215]  INFO -- : master process ready
+I, [2016-02-25T11:20:27.213022 #1248]  INFO -- : worker=0 spawned pid=1248
+I, [2016-02-25T11:20:27.213578 #1248]  INFO -- : worker=0 ready
+I, [2016-02-25T11:20:27.214851 #1250]  INFO -- : worker=1 spawned pid=1250
+I, [2016-02-25T11:20:27.215021 #1250]  INFO -- : worker=1 ready
