@@ -539,3 +539,23 @@ I, [2016-02-25T11:20:27.213022 #1248]  INFO -- : worker=0 spawned pid=1248
 I, [2016-02-25T11:20:27.213578 #1248]  INFO -- : worker=0 ready
 I, [2016-02-25T11:20:27.214851 #1250]  INFO -- : worker=1 spawned pid=1250
 I, [2016-02-25T11:20:27.215021 #1250]  INFO -- : worker=1 ready
+/home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:195:in `pid=': Already running on PID:1215 (or pid=/home/deploy/rempelonrails/shared/pids/unicorn.pid is stale) (ArgumentError)
+	from /home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:127:in `start'
+	from /home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/unicorn-5.0.1/bin/unicorn:126:in `<top (required)>'
+	from /home/deploy/.rbenv/versions/2.3.0/bin/unicorn:23:in `load'
+	from /home/deploy/.rbenv/versions/2.3.0/bin/unicorn:23:in `<main>'
+/home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:195:in `pid=': Already running on PID:1215 (or pid=/home/deploy/rempelonrails/shared/pids/unicorn.pid is stale) (ArgumentError)
+	from /home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:127:in `start'
+	from /home/deploy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/unicorn-5.0.1/bin/unicorn:126:in `<top (required)>'
+	from /home/deploy/.rbenv/versions/2.3.0/bin/unicorn:23:in `load'
+	from /home/deploy/.rbenv/versions/2.3.0/bin/unicorn:23:in `<main>'
+I, [2016-02-28T16:50:09.734865 #1216]  INFO -- : Refreshing Gem list
+I, [2016-02-28T16:50:14.460796 #1216]  INFO -- : unlinking existing socket=/home/deploy/rempelonrails/shared/sockets/unicorn.sock
+I, [2016-02-28T16:50:14.461097 #1216]  INFO -- : listening on addr=/home/deploy/rempelonrails/shared/sockets/unicorn.sock fd=11
+I, [2016-02-28T16:50:14.461295 #1216]  INFO -- : worker=0 spawning...
+I, [2016-02-28T16:50:14.465144 #1216]  INFO -- : worker=1 spawning...
+I, [2016-02-28T16:50:14.467262 #1249]  INFO -- : worker=0 spawned pid=1249
+I, [2016-02-28T16:50:14.468132 #1249]  INFO -- : worker=0 ready
+I, [2016-02-28T16:50:14.471403 #1216]  INFO -- : master process ready
+I, [2016-02-28T16:50:14.478319 #1252]  INFO -- : worker=1 spawned pid=1252
+I, [2016-02-28T16:50:14.482706 #1252]  INFO -- : worker=1 ready
