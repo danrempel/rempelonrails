@@ -33,4 +33,9 @@ class ApplicationController < ActionController::Base
 
     set_meta_tags options
   end
+
+  def title(string = nil)
+    prepare_meta_tags(title:string) if string
+    super
+  end
 end
