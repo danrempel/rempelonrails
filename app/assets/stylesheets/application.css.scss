@@ -149,6 +149,25 @@ hr {
 	}
 }
 
+span.tag a {
+  color: $highlight;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: .75em;
+  padding-right: 2px;
+  display: inline-block;
+  &:after {
+    content: ", ";
+    color: $dark;
+  }
+  &:last-child:after {
+    content: "";
+  }
+  &:hover {
+    color: $dark;
+  }
+}
+
 #page_title {
 	text-align: center;
 	border-bottom: 1px solid $border;

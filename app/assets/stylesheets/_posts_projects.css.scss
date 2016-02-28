@@ -11,6 +11,9 @@ $border: #D5D5D5;
 		.date {
 			font-size: .9em;
 			margin: 0;
+      display: inline-block;
+      padding-right: 10px;
+      color: $light;
 		}
 		h2 {
 			margin: 0;
@@ -29,7 +32,7 @@ $border: #D5D5D5;
       font-size: 1.05em;
       font-weight: 400;
       margin-top: 1.2em;
-      margin-bottom: 1em;
+      margin-bottom: 1.4em;
       font-family: 'Droid Serif', 'Georgia', 'Cambria', 'Times New Roman', serif;
     }
 		hr {
@@ -51,7 +54,7 @@ $border: #D5D5D5;
 		.date {
 			font-style: .9em;
 			color: $light;
-			margin: 20px 0 0;
+			margin: 20px 0 10px 0;
 		}
 		h1 {
 			margin: 0;

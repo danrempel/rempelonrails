@@ -10,8 +10,11 @@
 		<hr>
 		<% @posts.each do |post| %>
       <h3><%= link_to post.title, post %></h3>
-      <p class="date"><%= post.created_at.strftime("%B %d, %Y") %></p>
-      <span class="tag"><%= render post.tags %></span>
+      <h4><%= post.subtitle %></h4>
+      <div class="tagline">
+        <p class="date"><%= post.created_at.strftime("%B %d, %Y") %></p>
+        <span class="tag"><%= render post.tags %></span>
+      </div>
 		<%end %>
 	</div>
 	<div class="col-3 homepage_content">
