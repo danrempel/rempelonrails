@@ -63,7 +63,10 @@ $border: #D5D5D5;
 	padding: 0 7.5% 0 0;
 	a {
 		color: $highlight;
-		font-weight: 700;
+		font-weight: 400;
 		text-decoration: none;
+    &:hover {
+      color: $dark;
+    }
 	}
 }

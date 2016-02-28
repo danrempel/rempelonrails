@@ -1,2 +1,14 @@
-<h1><%= @tag.name %></h1>
-<div><%= render @posts %></div>
+<div id="posts_wrapper" class="skinny_wrapper">
+  <h1 style="text-align: center;"><%= @tag.name %></h1>
+  <hr style="margin: 3em auto;">
+  <% @posts.each do |post| %>
+    <div class="post">
+    <h2><%= link_to post.title, post %></h2>
+    <h4><%= post.subtitle %></h4>
+    <p class="date"><%= post.created_at.strftime("%B %d, %Y") %></p>
+    <span class="tag"><%= render post.tags %></span>
+    <hr>
+  </div>
+  <% end %>
+  <%= will_paginate @posts %>
+</div>
