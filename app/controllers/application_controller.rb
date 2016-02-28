@@ -8,6 +8,7 @@ class ApplicationController < ActionController::Base
   def prepare_meta_tags(options={})
     site_name = "Rempel on Rails"
     title = [controller_name.capitalize, action_name.capitalize].join(" ")
+    author = "Dan Rempel"
     description = "Rempel on Rails is a blog for beginner and intermediate Ruby and Rails developers, as well as a personal Rails portfolio for Dan Rempel."
     image = options[:image] || ""
     current_url = request.url
@@ -16,6 +17,7 @@ class ApplicationController < ActionController::Base
     defaults = {
       site: site_name,
       title: title,
+      author: author,
       image: image,
       description: description,
       keywords: %w[web development ruby rails],
