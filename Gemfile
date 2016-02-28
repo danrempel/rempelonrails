@@ -19,6 +19,7 @@ gem 'devise', '~> 3.5', '>= 3.5.6'
 gem 'unicorn', '~> 5.0', '>= 5.0.1'
 gem 'sitemap_generator'
 gem 'acts-as-taggable-on', '~> 3.4'
+gem 'meta-tags'
 
 group :development, :test do
   gem 'sqlite3'

@@ -3,6 +3,7 @@ class ProjectsController < ApplicationController
 	before_action :authenticate_user!, except: [:index, :show]
 
 	def index
+    prepare_meta_tags title: "Projects", description: "A list of projects I've completed"
 		@projects = Project.all.order("created_at desc")
 	end
 
@@ -21,6 +22,8 @@ class ProjectsController < ApplicationController
 	end
 
 	def show
+    @project = Project.friendly.find(params[:id])
+    prepare_meta_tags(title: @project.title,  keywords: @project_keywords)
 	end
 
 	def edit
