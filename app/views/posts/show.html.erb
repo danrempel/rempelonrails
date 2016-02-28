@@ -2,6 +2,7 @@
 	<header>
     <h1><%= @post.title %></h1>
     <p class="date"><%= @post.created_at.strftime('%B %d, %Y') %></p>
+    <span class="tag"><%= render @post.tags %></span>
 		<hr>
 	</header>
 

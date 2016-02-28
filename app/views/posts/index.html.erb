@@ -4,6 +4,7 @@
       <h2><%= link_to post.title, post %></h2>
       <h4><%= post.subtitle %></h4>
       <p class="date"><%= post.created_at.strftime("%B %d, %Y") %></p>
+      <span class="tag"><%= render post.tags %></span>
 			<hr>
 		</div>
 	<% end %>
