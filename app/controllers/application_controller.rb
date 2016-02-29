@@ -18,7 +18,7 @@ class ApplicationController < ActionController::Base
       title: title,
       image: image,
       description: description,
-      keywords: %w[web development ruby rails],
+      keywords: %w[web development ruby rails, edmonton, yeg],
       og: {
         url: current_url,
         site_name: site_name,
