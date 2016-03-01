@@ -26,7 +26,18 @@ $border: #D5D5D5;
 					color: $highlight;
 				}
 			}
-		}
+    }
+    h2#posthead {
+      display: inline-block;
+     }
+    span#draft {
+      display: inline-block;
+      padding-left: 10px;
+      color: $light;
+      font-size: 1em;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
     h4 {
       color: #707070;
       font-size: 1.05em;

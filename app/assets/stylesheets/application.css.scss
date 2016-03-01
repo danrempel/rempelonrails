@@ -18,6 +18,7 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,700);
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700,400italic,300italic,300,700italic,500italic);
 @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,400italic,700,700italic);
+@import url(https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700|Fira+Sans:400,500,700);
 
 $dark: #424652;
 $white: #ffffff;
@@ -31,7 +32,7 @@ $border: #D5D5D5;
 
 body {
 	font-family: 'Roboto', sans-serif;
-	background-color: #e9e9e9;
+	background-color: $white;
 }
 
 .wrapper {
