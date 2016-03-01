@@ -12,18 +12,15 @@
 	<%= f.text_field :title %>
 
 	<br>
-	<br>
 
   <%= f.label :subtitle %><br>
-  <%= f.text_field :subtitle %>
+  <%= f.text_field :subtitle, :maxlength => 86 %>
 
-  <br>
   <br>
 
   <%= f.label :tags %><br>
   <%= f.text_field :tag_list, placeholder: "Tags separated with comma"  %>
 
-  <br>
   <br>
 
   <%= f.label :published %><br>
