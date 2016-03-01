@@ -4,6 +4,7 @@ SitemapGenerator::Sitemap.create do
   add '/contacts/new'   
   add '/posts', :changefreq => 'weekly'
   add '/projects', :changefreq => 'weekly'
+  add '/tags', :changefreq => 'weekly'
 
   Post.find_each do |post|
   	add post_path(post.slug), lastmod: post.updated_at, :priority => 0.5

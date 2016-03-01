@@ -4,7 +4,7 @@ class PostsController < ApplicationController
 
 	def index
     prepare_meta_tags title: "Blog", description: "Posts I've written"
-		@posts = Post.all.order("created_at desc").paginate(page: params[:page], per_page: 10)
+		@posts = Post.where(published: true).order("created_at desc").paginate(page: params[:page], per_page: 10)
 	end
 
 	def new
@@ -44,7 +44,7 @@ class PostsController < ApplicationController
 
 	private
 	def post_params
-		params.require(:post).permit(:title, :subtitle, :content, :tag_list, :slug)
+		params.require(:post).permit(:title, :subtitle, :published, :content, :tag_list, :slug)
 	end
 
 	def find_post
