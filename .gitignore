@@ -29,7 +29,7 @@ capybara-*.html
 /db/*.sqlite3-journal
 /public/system
 /public
-/public/assets/
+/public/assets/*
 /coverage/
 /spec/tmp
 **.orig
