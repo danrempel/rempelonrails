@@ -8,7 +8,7 @@
 	<div class="col-2 homepage_content">
 		<h2>Recent Posts</h2>
 		<hr>
-		<% @posts.each do |post| %>
+		<% @posts.where(published: true).each do |post| %>
       <h3><%= link_to post.title, post %></h3>
       <h4><%= post.subtitle %></h4>
       <div class="tagline">

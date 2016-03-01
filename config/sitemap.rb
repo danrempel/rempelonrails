@@ -9,5 +9,4 @@ SitemapGenerator::Sitemap.create do
   Post.find_each do |post|
   	add post_path(post.slug), lastmod: post.updated_at, :priority => 0.5
   end
-SitemapGenerator::Sitemap.ping_search_engines # Not needed if you use the rake tasks
 end

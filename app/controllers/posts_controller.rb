@@ -3,8 +3,12 @@ class PostsController < ApplicationController
 	before_action :authenticate_user!, except: [:index, :show]
 
 	def index
-    prepare_meta_tags title: "Blog", description: "Posts I've written"
-		@posts = Post.where(published: true).order("created_at desc").paginate(page: params[:page], per_page: 10)
+    if user_signed_in?
+      @posts = Post.all.order("created_at desc").paginate(page: params[:page], per_page: 10)
+    else
+      prepare_meta_tags title: "Blog", description: "Posts I've written"
+		  @posts = Post.where(published: true).order("created_at desc").paginate(page: params[:page], per_page: 10)
+    end
 	end
 
 	def new
@@ -22,8 +26,16 @@ class PostsController < ApplicationController
 	end
 
 	def show
-    @post = Post.friendly.find(params[:id])
-    prepare_meta_tags(title: @post.title, description: @post.subtitle, keywords: @post_keywords)
+    if user_signed_in?
+      @post = Post.friendly.find(params[:id])
+    else
+      if :published == true
+        @post = Post.where(published: true).friendly.find(params[:id])
+        prepare_meta_tags(title: @post.title, description: @post.subtitle, keywords: @post_keywords)
+      else
+        redirect_to posts_path
+      end
+    end
 	end
 
 	def edit
