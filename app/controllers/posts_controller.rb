@@ -29,12 +29,8 @@ class PostsController < ApplicationController
     if user_signed_in?
       @post = Post.friendly.find(params[:id])
     else
-      if :published == true
-        @post = Post.where(published: true).friendly.find(params[:id])
-        prepare_meta_tags(title: @post.title, description: @post.subtitle, keywords: @post_keywords)
-      else
-        redirect_to posts_path
-      end
+      @post = Post.where(published: true).friendly.find(params[:id])
+      prepare_meta_tags(title: @post.title, description: @post.subtitle, keywords: @post_keywords)
     end
 	end
 
