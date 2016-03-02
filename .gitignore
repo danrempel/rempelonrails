@@ -40,6 +40,7 @@ pickle-email-*.html
 /shared/log/*
 /shared/log/unicorn.stderr.log
 /shared/pids/unicorn.pid
+/config/newrelic.yml
 
 # TODO Comment out these rules if you are OK with secrets being uploaded to the repo
 config/initializers/secret_token.rb
