@@ -1,7 +1,7 @@
 module ApplicationHelper
 	class HTMLwithPygments < Redcarpet::Render::HTML
 		def block_code(code, language)
-			Pygments.highlight(code, lexer: 'ruby')
+			Pygments.highlight(code, lexer: 'ruby', :options => {:encoding => 'utf-8', :linenostart => 1, linenos: 'inline'})
 		end
 	end
 	def markdown(content)
