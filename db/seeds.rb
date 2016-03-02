@@ -1,63 +1,20 @@
 User.create!({:email => "dan.rempel0@gmail.com", :password => "P@ssw0rd", :password_confirmation => "P@ssw0rd" })
 
-Post.create(title: 'DevOps for Noobs', subtitle: 'Rudimentary guide to deploying your rails app to a VPS.', tag_list: 'VPS, Learning, Code', content: 'Lumbersexual vegan fanny pack listicle, sustainable asymmetrical selfies tattooed next level tote bag hammock irony. Franzen offal raw denim portland migas vice. Mixtape jean shorts austin, letterpress sustainable bespoke yr whatever fixie. Seitan flannel umami flexitarian squid, hashtag shabby chic slow-carb wayfarers chia next level. Pabst chambray pork belly, stumptown skateboard brunch gastropub cardigan truffaut forage roof party vegan street art. Vinyl single-origin coffee meggings normcore. Kombucha cliche farm-to-table chambray bitters fingerstache, locavore hashtag try-hard affogato asymmetrical.
+Post.create(title: 'DevOps For Rails Noobs', subtitle: 'Getting your app set up on a VPS with Ubuntu 15.10, Unicorn, and Nginx.', tag_list: 'Ubuntu, DevOps, VPS', published: true, content: 'Lumbersexual vegan fanny pack listicle, sustainable asymmetrical selfies tattooed next level tote bag hammock irony. Franzen offal raw denim portland migas vice. Mixtape jean shorts austin, letterpress sustainable bespoke yr whatever fixie. Seitan flannel umami flexitarian squid, hashtag shabby chic slow-carb wayfarers chia next level. Pabst chambray pork belly, [stumptown skateboard brunch gastropub](#) cardigan truffaut forage roof party vegan street art. Vinyl single-origin coffee meggings normcore. Kombucha cliche farm-to-table chambray bitters fingerstache, locavore hashtag try-hard affogato asymmetrical.
 
-              Migas knausgaard hammock keffiyeh readymade church-key, tousled paleo cornhole chia pickled etsy selfies. Knausgaard tacos freegan venmo, skateboard small batch chicharrones polaroid. Celiac street art distillery stumptown. Single-origin coffee lomo direct trade, slow-carb four loko stumptown kitsch roof party godard humblebrag DIY ethical quinoa mumblecore. Taxidermy paleo master cleanse next level leggings, sartorial flexitarian bitters. Mixtape flexitarian quinoa 8-bit tote bag food truck, humblebrag brunch. Knausgaard readymade schlitz, tousled flexitarian gastropub food truck vegan man braid pitchfork slow-carb asymmetrical butcher cliche kombucha.')
+	Migas knausgaard hammock keffiyeh readymade church-key, tousled paleo cornhole chia pickled etsy selfies. Knausgaard tacos freegan venmo, skateboard small batch chicharrones polaroid. Celiac street art distillery stumptown. Single-origin coffee lomo direct trade, slow-carb four loko stumptown kitsch roof party godard humblebrag DIY ethical quinoa mumblecore. Taxidermy paleo master cleanse next level leggings, sartorial flexitarian bitters. Mixtape flexitarian quinoa 8-bit tote bag food truck, humblebrag brunch. Knausgaard readymade schlitz, tousled flexitarian gastropub food truck vegan man braid pitchfork slow-carb asymmetrical butcher cliche kombucha.')
 
-Post.create(title: 'Code: A Different Way to Learn', subtitle: 'Some filler text here', tag_list: 'Linux, Design, Motivation', content: 'Lumbersexual vegan fanny pack listicle, sustainable asymmetrical selfies tattooed next level tote bag hammock irony. Franzen offal raw denim portland migas vice. Mixtape jean shorts austin, letterpress sustainable bespoke yr whatever fixie. Seitan flannel umami flexitarian squid, hashtag shabby chic slow-carb wayfarers chia next level. Pabst chambray pork belly, stumptown skateboard brunch gastropub cardigan truffaut forage roof party vegan street art. Vinyl single-origin coffee meggings normcore. Kombucha cliche farm-to-table chambray bitters fingerstache, locavore hashtag try-hard affogato asymmetrical.
+Post.create(title: 'Gaining Context: Hack Your Learning', subtitle: 'Hack your learning process by gaining context on Ruby on Rails and Web Development.', tag_list: 'Motivation, Learning', published: true, content: 'Lumbersexual vegan fanny pack listicle, sustainable asymmetrical selfies tattooed next level tote bag hammock irony. Franzen offal raw denim portland migas vice. Mixtape jean shorts austin, letterpress sustainable bespoke yr whatever fixie. Seitan flannel umami flexitarian squid, hashtag shabby chic slow-carb wayfarers chia next level. Pabst chambray pork belly, [stumptown skateboard brunch gastropub](#) cardigan truffaut forage roof party vegan street art. Vinyl single-origin coffee meggings normcore. Kombucha cliche farm-to-table chambray bitters fingerstache, locavore hashtag try-hard affogato asymmetrical.
 
-              Migas knausgaard hammock keffiyeh readymade church-key, tousled paleo cornhole chia pickled etsy selfies. Knausgaard tacos freegan venmo, skateboard small batch chicharrones polaroid. Celiac street art distillery stumptown. Single-origin coffee lomo direct trade, slow-carb four loko stumptown kitsch roof party godard humblebrag DIY ethical quinoa mumblecore. Taxidermy paleo master cleanse next level leggings, sartorial flexitarian bitters. Mixtape flexitarian quinoa 8-bit tote bag food truck, humblebrag brunch. Knausgaard readymade schlitz, tousled flexitarian gastropub food truck vegan man braid pitchfork slow-carb asymmetrical butcher cliche kombucha.')
+  Migas knausgaard hammock keffiyeh readymade church-key, tousled paleo cornhole chia pickled etsy selfies. Knausgaard tacos freegan venmo, skateboard small batch chicharrones polaroid. Celiac street art distillery stumptown. Single-origin coffee lomo direct trade, slow-carb four loko stumptown kitsch roof party godard humblebrag DIY ethical quinoa mumblecore. Taxidermy paleo master cleanse next level leggings, sartorial flexitarian bitters. Mixtape flexitarian quinoa 8-bit tote bag food truck, humblebrag brunch. Knausgaard readymade schlitz, tousled flexitarian gastropub food truck vegan man braid pitchfork slow-carb asymmetrical butcher cliche kombucha.')
 
-Project.create(title: 'Rempel on Rails', description: 'Test content here!')
-Project.create(title: 'Hobbit Meal Clock', description: 'Test content here!')
+Post.create(title: 'Tutorial: Build A Simple Twitter Bot With Rails 4', subtitle: 'Have some fun with the Twitter API and the whenever gem.', tag_list: 'Tutorial, Twitter, API', published: true, content: 'Lumbersexual vegan fanny pack listicle, sustainable asymmetrical selfies tattooed next level tote bag hammock irony. Franzen offal raw denim portland migas vice. Mixtape jean shorts austin, letterpress sustainable bespoke yr whatever fixie. Seitan flannel umami flexitarian squid, hashtag shabby chic slow-carb wayfarers chia next level. Pabst chambray pork belly, [stumptown skateboard brunch gastropub](#) cardigan truffaut forage roof party vegan street art. Vinyl single-origin coffee meggings normcore. Kombucha cliche farm-to-table chambray bitters fingerstache, locavore hashtag try-hard affogato asymmetrical.
 
-# Tag.create(name: 'analytics')
-# # Tag.create(name: 'automation')
-# # Tag.create(name: 'books')
-# # Tag.create(name: 'chrome')
-# # Tag.create(name: 'code')
-# # Tag.create(name: 'coffeescript')
-# # Tag.create(name: 'data')
-# # Tag.create(name: 'design')
-# # Tag.create(name: 'devtools')
-# # Tag.create(name: 'dns')
-# # Tag.create(name: 'front-end')
-# # Tag.create(name: 'git')
-# # Tag.create(name: 'heroku')
-# # Tag.create(name: 'http')
-# # Tag.create(name: 'javascript')
-# # Tag.create(name: 'json')
-# # Tag.create(name: 'language')
-# # Tag.create(name: 'linux')
-# # Tag.create(name: 'mobile')
-# # Tag.create(name: 'news')
-# # Tag.create(name: 'open-source')
-# # Tag.create(name: 'osx')
-# # Tag.create(name: 'performance')
-# # Tag.create(name: 'podcast')
-# # Tag.create(name: 'postgres')
-# # Tag.create(name: 'productivity')
-# # Tag.create(name: 'rails')
-# # Tag.create(name: 'ruby')
-# # Tag.create(name: 'rake')
-# # Tag.create(name: 'redis')
-# # Tag.create(name: 'rspec')
-# # Tag.create(name: 'sass')
-# # Tag.create(name: 'security')
-# # Tag.create(name: 'shell')
-# # Tag.create(name: 'sinatra')
-# # Tag.create(name: 'sql')
-# # Tag.create(name: 'ssl')
-# # Tag.create(name: 'ssh')
-# # Tag.create(name: 'style')
-# # Tag.create(name: 'tdd')
-# # Tag.create(name: 'testing')
-# # Tag.create(name: 'tmux')
-# # Tag.create(name: 'tools')
-# # Tag.create(name: 'typography')
-# # Tag.create(name: 'ui')
-# # Tag.create(name: 'unix')
-# # Tag.create(name: 'usability')
-# # Tag.create(name: 'user-experience')
-# # Tag.create(name: 'vim')
-# # Tag.create(name: 'web')
+  Migas knausgaard hammock keffiyeh readymade church-key, tousled paleo cornhole chia pickled etsy selfies. Knausgaard tacos freegan venmo, skateboard small batch chicharrones polaroid. Celiac street art distillery stumptown. Single-origin coffee lomo direct trade, slow-carb four loko stumptown kitsch roof party godard humblebrag DIY ethical quinoa mumblecore. Taxidermy paleo master cleanse next level leggings, sartorial flexitarian bitters. Mixtape flexitarian quinoa 8-bit tote bag food truck, humblebrag brunch. Knausgaard readymade schlitz, tousled flexitarian gastropub food truck vegan man braid pitchfork slow-carb asymmetrical butcher cliche kombucha.')
+
+Post.create(title: 'Tiers Of Understanding', subtitle: 'Realizing you know more than you did last week is exciting.', tag_list: 'Motivation', published: false, content: 'Lumbersexual vegan fanny pack listicle, sustainable asymmetrical selfies tattooed next level tote bag hammock irony. Franzen offal raw denim portland migas vice. Mixtape jean shorts austin, letterpress sustainable bespoke yr whatever fixie. Seitan flannel umami flexitarian squid, hashtag shabby chic slow-carb wayfarers chia next level. Pabst chambray pork belly, [stumptown skateboard brunch gastropub](#) cardigan truffaut forage roof party vegan street art. Vinyl single-origin coffee meggings normcore. Kombucha cliche farm-to-table chambray bitters fingerstache, locavore hashtag try-hard affogato asymmetrical.
+
+  Migas knausgaard hammock keffiyeh readymade church-key, tousled paleo cornhole chia pickled etsy selfies. Knausgaard tacos freegan venmo, skateboard small batch chicharrones polaroid. Celiac street art distillery stumptown. Single-origin coffee lomo direct trade, slow-carb four loko stumptown kitsch roof party godard humblebrag DIY ethical quinoa mumblecore. Taxidermy paleo master cleanse next level leggings, sartorial flexitarian bitters. Mixtape flexitarian quinoa 8-bit tote bag food truck, humblebrag brunch. Knausgaard readymade schlitz, tousled flexitarian gastropub food truck vegan man braid pitchfork slow-carb asymmetrical butcher cliche kombucha.')
+
+Project.create(title: 'Rempel on Rails', description: 'Lumbersexual vegan fanny pack listicle, sustainable asymmetrical selfies tattooed next level tote bag hammock irony. Franzen offal raw denim portland migas vice. Mixtape jean shorts austin, letterpress sustainable bespoke yr whatever fixie. Seitan flannel umami flexitarian squid, hashtag shabby chic slow-carb wayfarers chia next level. [Pabst chambray pork belly](#), stumptown skateboard brunch gastropub cardigan truffaut forage roof party vegan street art. Vinyl single-origin coffee meggings normcore. Kombucha cliche farm-to-table chambray bitters fingerstache, locavore hashtag try-hard affogato asymmetrical.')
+Project.create(title: 'Hobbit Meal Clock', description: 'Migas knausgaard hammock keffiyeh readymade church-key, tousled paleo cornhole chia pickled etsy selfies. Knausgaard tacos freegan venmo, skateboard small batch chicharrones polaroid. Celiac street art distillery stumptown. Single-origin coffee lomo direct trade, slow-carb four loko stumptown kitsch roof party godard humblebrag [DIY ethical quinoa mumblecore](#). Taxidermy paleo master cleanse next level leggings, sartorial flexitarian bitters. Mixtape flexitarian quinoa 8-bit tote bag food truck, humblebrag brunch. Knausgaard readymade schlitz, tousled flexitarian gastropub food truck vegan man braid pitchfork slow-carb asymmetrical butcher cliche kombucha.')
