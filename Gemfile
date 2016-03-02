@@ -20,6 +20,7 @@ gem 'unicorn', '~> 5.0', '>= 5.0.1'
 gem 'sitemap_generator'
 gem 'acts-as-taggable-on', '~> 3.4'
 gem 'meta-tags'
+gem 'newrelic_rpm'
 
 group :development, :test do
   gem 'sqlite3'
