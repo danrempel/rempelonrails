@@ -2,12 +2,17 @@
   <h1 style="text-align: center;"><%= @tag.name %></h1>
   <hr style="margin: 3em auto;">
   <% @posts.each do |post| %>
-    <div class="post">
+  <div class="post">
     <h2><%= link_to post.title, post %></h2>
+    <% if user_signed_in? %>
+      <% if post.published == false %>
+        <span id="draft">Draft</span>
+      <% end %>
+    <% end %>
     <h4><%= post.subtitle %></h4>
     <p class="date"><%= post.created_at.strftime("%B %d, %Y") %></p>
     <span class="tag"><%= render post.tags %></span>
-    <hr>
+  <hr>
   </div>
   <% end %>
   <%= will_paginate @posts %>
