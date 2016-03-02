@@ -6,7 +6,6 @@ class PostsController < ApplicationController
     if user_signed_in?
       @posts = Post.all.order("created_at desc").paginate(page: params[:page], per_page: 10)
     else
-      prepare_meta_tags title: "Blog", description: "Posts I've written"
 		  @posts = Post.where(published: true).order("created_at desc").paginate(page: params[:page], per_page: 10)
     end
 	end
@@ -30,7 +29,6 @@ class PostsController < ApplicationController
       @post = Post.friendly.find(params[:id])
     else
       @post = Post.where(published: true).friendly.find(params[:id])
-      prepare_meta_tags(title: @post.title, description: @post.subtitle, keywords: @post_keywords)
     end
 	end
 

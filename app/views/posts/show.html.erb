@@ -1,3 +1,4 @@
+<% set_meta_tags site: 'Rempel on Rails', title: @post.title, description: @post.subtitle, keywords: @post.tag_list, reverse: true, og: {title: @post.title, type: 'website', url: request.url, description: @post.subtitle } %>
 <div id="post_show_content" class="skinny_wrapper wrapper_padding  content_container">
 	<header>
     <h1><%= @post.title %></h1>
