@@ -3,6 +3,7 @@
 <head>
   <%= display_meta_tags site: 'Rempel on Rails' %>
   <meta name="author" content="Dan Rempel">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 	<%= favicon_link_tag 'favicon.ico' %>
@@ -11,7 +12,45 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-	<header id="main_navigation" class="clearfix">
+  <header class="navbar navbar-inverse navbar-fixed-top bs-docs-nav clearfix" role="banner">
+      <div class="navbar-header">
+        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <%= link_to "Rempel on Rails", root_path, class: "name navbar-brand pull-left" %>
+      </div>
+      <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+        <ul class="nav navbar-nav navbar-right pull-right">
+          <li>
+            <%= link_to "Home", root_path %>
+          </li>
+          <li>
+            <%= link_to "Blog", posts_path %>
+          </li>
+          <li>
+            <%= link_to "Projects", projects_path %>
+          </li>
+          <li>
+            <%= link_to "Contact", contact_path %>
+          </li>
+          <% if user_signed_in? %>
+            <li>
+              <%= link_to "New Post", new_post_path %>
+            </li>
+            <li>
+              <%= link_to "New Project", new_project_path %>
+            </li>
+            <li>
+              <%= link_to "Logout", destroy_user_session_path, method: :delete %>
+            </li>
+          <% end %>
+        </ul>
+      </nav>
+  </header>
+<!--	<header id="main_navigation" class="clearfix">
 		<%= link_to "Rempel on Rails", root_path, class: "name" %>
 		<nav>
 			<%= link_to "Home", root_path %>
@@ -24,7 +63,7 @@
 				<%= link_to "Logout", destroy_user_session_path, method: :delete %>
 			<% end %>
 		</nav>
-	</header>
+</header>-->
 
 	<% if notice %>
 		<p class="notice"><%= notice %></p>
@@ -32,8 +71,9 @@
   	<p class="alert"><%= alert %></p>
   <% end %>
 
-
-<%= yield %>
+  <div class="containter">
+    <%= yield %>
+  </div>
 
 	<footer id="main_footer">
 		<p class="copyright">&copy; 2016 Dan Rempel</p>

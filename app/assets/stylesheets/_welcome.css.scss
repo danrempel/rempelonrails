@@ -4,8 +4,8 @@ $light: #9a9da4;
 $highlight: #cb4b16;
 $border: #D5D5D5;
 
-.col-1, .col-2, .col-3 {
-	float: left;
+/* .col-1, .col-2, .col-3 {
+  float: left;
 }
 
 .col-1 {
@@ -16,17 +16,18 @@ $border: #D5D5D5;
 .col-2, .col-3 {
 	width: 27.5%;
 	padding: 0 2.5%;
-}
+} */
 
 .homepage_content {
 	h2 {
-		font-size: 1.1rem;
+		font-size: 1.06rem;
+		font-weight: 700;
 		text-transform: uppercase;
 	}
 	
 	h3 {
     font-family: 'Roboto', sans-serif;
-		font-size: 1.3em;
+		font-size: 1.49em;
 		font-weight: 700;
 		margin-bottom: .7em;
 	}

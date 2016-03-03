@@ -21,6 +21,7 @@ gem 'sitemap_generator'
 gem 'acts-as-taggable-on', '~> 3.4'
 gem 'meta-tags'
 gem 'newrelic_rpm'
+gem 'bootstrap-sass', '~> 3.3', '>= 3.3.6'
 
 group :development, :test do
   gem 'sqlite3'
