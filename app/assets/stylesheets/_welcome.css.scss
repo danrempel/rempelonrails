@@ -20,9 +20,13 @@ $border: #D5D5D5;
 
 .homepage_content {
 	h2 {
-		font-size: 1.06rem;
+		font-size: 1.8rem;
 		font-weight: 700;
+    text-align: center;
 		text-transform: uppercase;
+    &:not(:first-child) {
+      padding-top: 1em;
+    }
 	}
 	
 	h3 {
@@ -72,4 +76,16 @@ $border: #D5D5D5;
       color: $dark;
     }
 	}
+}
+
+/* Small devices (tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .homepage_content h2 {
+    font-size: 1.06rem;
+    text-align: left;
+    padding-top: 0;
+  }
+  hr {
+    margin: 2rem 0;
+  }
 }

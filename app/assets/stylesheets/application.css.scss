@@ -119,11 +119,12 @@ p, ul, ol {
 
 hr {
 		width: 3.5em;
+    text-align: center;
 		display: block;
 		height: 2px;
 		border: 0;
 		border-top: 2px solid $highlight;
-		margin: 2rem 0;
+		margin: 2rem auto;
 	}
 
 #main_navigation {
@@ -309,6 +310,12 @@ input[type="submit"], .button {
 .button_wrapper {
 	margin: 4em 0 0 0;
 	text-align: center;
+}
+
+@media only screen and (min-width: 768px) { 
+  hr {
+    text-align: left;
+  }
 }
 
 @import 'welcome';
