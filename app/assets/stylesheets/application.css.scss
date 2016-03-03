@@ -15,15 +15,16 @@
  */
 
 @import 'normalize';
-@import url(https://fonts.googleapis.com/css?family=Raleway:400,700);
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700,400italic,300italic,300,700italic,500italic);
 @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,400italic,700,700italic);
 @import url(https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700|Fira+Sans:400,500,700);
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:400,500,700);
 
-$dark: #424652;
+$dark: #2E303A;
 $white: #ffffff;
 $light: #9a9da4;
-$highlight: #c00;
+$highlight: #cb4b16;
+$background: #002b36;
 $border: #D5D5D5;
 
 * {
@@ -119,7 +120,7 @@ hr {
 #main_navigation {
 	padding: 2.5em 5%;
 	border-bottom: 1px solid $dark;
-	background: #fff url(image-path('nav_pattern.png')) repeat;
+	background: $background;
 	box-shadow: 0 10px 15px -8px #000;
 	.active {
 		color: $highlight;
@@ -129,7 +130,7 @@ hr {
 		font-size: .9em;
 		letter-spacing: 4px;
 		text-transform: uppercase;
-		border: 2px solid $border;
+		border: 2px solid $white;
 		padding: 1rem;
 		text-decoration: none;
 		color: $white;
@@ -140,6 +141,7 @@ hr {
 		padding-top: 1.5rem;
 		a {
 			color: $white;
+      font-weight: 700;
 			text-decoration: none;
 			margin: 0 1rem;
 			font-size: 1rem;
@@ -178,24 +180,28 @@ span.tag a {
 }
 
 #main_footer {
-	padding: 4em 5%;
+	padding: 2.5em 5%;
+  margin-top: 39px;
 	border-top: 1px solid $dark;
-	background: #fff url(image-path('nav_pattern.png')) repeat;
+	background: $dark;
 	box-shadow: 0 -10px 15px -8px #000;
 	.copyright {
 		float: left;
-		color: $white;
+    line-height: .5em;
+		color: $light;
+    font-weight: 700;
 		font-size: .9em;
 		margin: 0;
 	}
 	nav {
 		float: right;
 		i {
-			color: $white;
+			color: $light;
+      line-height: .5em;
 			margin-left: 1em;
 			padding-top: .2em;
 			&:hover {
-				color: $highlight;
+				color: $white;
 			}
 		}
 	}
