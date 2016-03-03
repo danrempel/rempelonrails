@@ -118,7 +118,7 @@ hr {
 	}
 
 #main_navigation {
-	padding: 2.5em 5%;
+	padding: .8em 5%;
 	border-bottom: 1px solid $dark;
 	background: $background;
 	box-shadow: 0 10px 15px -8px #000;
@@ -127,21 +127,19 @@ hr {
 	}
 	.name {
 		font-weight: 700;
-		font-size: .9em;
-		letter-spacing: 4px;
+		font-size: 1.1em;
+		letter-spacing: 2px;
 		text-transform: uppercase;
-		border: 2px solid $white;
-		padding: 1rem;
+		padding: 1rem 0;
 		text-decoration: none;
 		color: $white;
 		float: left;
 	}
 	nav {
 		float: right;
-		padding-top: 1.5rem;
+		padding-top: 1rem;
 		a {
 			color: $white;
-      font-weight: 700;
 			text-decoration: none;
 			margin: 0 1rem;
 			font-size: 1rem;
