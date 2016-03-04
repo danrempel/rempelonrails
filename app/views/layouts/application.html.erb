@@ -25,10 +25,10 @@
       <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
         <ul class="nav navbar-nav navbar-right pull-right">
           <li>
-            <%= link_to "Home", root_path %>
+            <%= link_to "Blog", root_path %>
           </li>
           <li>
-            <%= link_to "Blog", posts_path %>
+            <%= link_to "About", welcome_index_path %>
           </li>
           <li>
             <%= link_to "Projects", projects_path %>
@@ -50,25 +50,10 @@
         </ul>
       </nav>
   </header>
-<!--	<header id="main_navigation" class="clearfix">
-		<%= link_to "Rempel on Rails", root_path, class: "name" %>
-		<nav>
-			<%= link_to "Home", root_path %>
-			<%= link_to "Blog", posts_path %>
-			<%= link_to "Projects", projects_path %>
-			<%= link_to "Contact", contact_path %>
-			<% if user_signed_in? %>
-				<%= link_to "New Post", new_post_path %>
-        <%= link_to "New Project", new_project_path %>
-				<%= link_to "Logout", destroy_user_session_path, method: :delete %>
-			<% end %>
-		</nav>
-</header>-->
-
 	<% if notice %>
-		<p class="notice"><%= notice %></p>
+    <div class="alert alert-success" role="alert"><%= notice %></div>
   <% elsif alert %>
-  	<p class="alert"><%= alert %></p>
+    <div class="alert alert-danger" role="alert"><%= alert %></div>
   <% end %>
 
   <div class="containter">

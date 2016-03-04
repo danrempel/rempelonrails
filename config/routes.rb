@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   match '/contact', to: 'contacts#new', via: 'get'
   resources :contacts, only: [:new, :create]
   get 'welcome/index'
-  root 'welcome#index'
+  root 'posts#index'
 
   get '*path' => redirect('/')
 end
