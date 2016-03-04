@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
   devise_for :users
-  resources :posts
   resources :tags, only: [:index, :show]
   resources :projects
   match '/contact', to: 'contacts#new', via: 'get'
@@ -10,4 +9,5 @@ Rails.application.routes.draw do
   root 'posts#index'
 
   get '*path' => redirect('/')
+  resources :posts, path: ""
 end
