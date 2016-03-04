@@ -59,6 +59,62 @@ $border: #D5D5D5;
   }
 }
 
+// ------- Sidebar Styles
+img.avatar {
+  margin: 0 auto;
+  border-radius: 50%;
+  margin: 35px 0 20px 0;
+  height: 250px;
+  border: 1px solid black;
+}
+
+p.about_me {
+  font-size: 14px;
+  text-align: left;
+  line-height: 18px;
+  margin: 0 auto;
+}
+
+#tag_cloud {
+  margin-top: 25px;
+  text-align: center;
+  line-height: 1.6em;
+  a {
+    color: $highlight;
+    &:hover {
+      color: black;
+      text-decoration: none;
+    }
+  }
+  .s { font-size: 0.8em; }
+  .m { font-size: 1.2em; }
+  .l { font-size: 1.8em; }
+  h6 {
+    text-decoration: underline;
+  }
+}
+
+#popular_posts {
+  h6 {
+    text-align: center;
+    padding-top: 25px;
+    text-decoration: underline;
+  }
+  ul {
+    list-style: none;
+    padding-left: 0;
+    a {
+      color: $dark;
+      white-space: nowrap;
+      font-size: .8rem;
+      font-weight: 700;
+      &:hover {
+        color: $highlight;
+      }
+    }
+  }
+}
+
 // ------- Posts Show
 #post_show_content {
 	header {
@@ -157,7 +213,8 @@ ul li a {
 
 .pagination {
 	text-align: center;
-	margin: 0 0 3em 0;
+  display: block;
+	margin: 0 1.2em 3em 0;
 	a, .previous_page, .current, .next_page {
 		padding: .75em 1em;
 		margin: 0.5em;
