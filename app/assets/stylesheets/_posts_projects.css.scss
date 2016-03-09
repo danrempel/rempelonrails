@@ -116,6 +116,10 @@ p.about_me {
   }
 }
 
+#search input[type="text"] {
+  border: 2px solid $light;
+}
+
 // ------- Posts Show
 #post_show_content {
 	header {
