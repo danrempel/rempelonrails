@@ -202,7 +202,25 @@ ul li a {
 		color: $light;
 		margin: 0 1em;
 		font-weight: 700;
-		font-style: .8em;
+		text-transform: uppercase;
+		text-decoration: none;
+		&:hover {
+			color: $highlight;
+		}
+	}
+}
+
+#prevnext {
+	border-top: 1px solid $border;
+	border-bottom: 1px solid $border;
+	text-align: center;
+	padding: 1.5em 0;
+  font-size: 1.5em;
+	margin: 1.5em 0;
+	a {
+		color: $light;
+		margin: 0 1em;
+		font-weight: 700;
 		text-transform: uppercase;
 		text-decoration: none;
 		&:hover {

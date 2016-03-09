@@ -18,9 +18,7 @@
 		</div>
 	<% end %>
 
-	
-
-	<hr>
+  <hr>
 
 	<div id="share_box">
     <p><span class="redshare">Share</span> "<%= @post.title %>"</p>
@@ -32,7 +30,10 @@
     <a onclick="javascript:window.open('https://plus.google.com/share?url=<%= url_for([@post, {only_path: false}]) %>', '_blank', 'width=800, height=500, top=200, left=300');void(0);"><i class="fa fa-google-plus"></i></a>
 	</div>
 
-	<hr>
+  <div id="prevnext">
+    <%= link_to "Prev Post", @post.prev %>
+    <%= link_to "Next Post", @post.next %>
+  </div>
 
 	<%= render 'disqus' %>
 
