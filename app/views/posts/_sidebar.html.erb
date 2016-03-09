@@ -1,0 +1,28 @@
+<div class="col-sm-3 col-md-3 sidebar pull-right">
+  <%= image_tag "avatar.jpg", class: "avatar" %>
+  <p class="about_me">My name is Dan Rempel and I'm a web developer living in Edmonton, Alberta. I'm a ruby enthusiast and analytics junkie. My hope is to use this blog to solidify things as I learn them while also hopefully giving back to the community.</p>
+  <div id="tag_cloud">
+    <h6>Tags</h6>
+    <% tag_cloud Post.tag_counts, %w{s m l} do |tag, css_class| %>
+      <%= link_to tag.name, tag_path(tag.name.downcase), class: css_class %>
+    <% end %>
+  </div>
+  <div id="popular_posts">
+    <h6>Popular Posts</h6>
+    <ul>
+      <li>
+        <a href="http://www.rempelonrails.com/posts/tutorial-build-a-simple-twitter-bot-with-rails-4">Tutorial: Build a Simple Twitter Bot with Rails 4</a>
+      </li>
+      <li>
+        <a href="http://www.rempelonrails.com/posts/gaining-context-hack-your-learning">Gaining Context: Hack Your Learning</a>
+      </li>
+    </ul>
+  </div>
+  <div id="search">
+    <%= form_tag(posts_path, :method => "get", id: "search-form") do %>
+      <p>
+      <%= text_field_tag :search, params[:search], placeholder: "Search" %>
+      </p>
+    <% end %>
+  </div>
+</div>
