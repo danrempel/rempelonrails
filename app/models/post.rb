@@ -6,4 +6,8 @@ class Post < ActiveRecord::Base
   def should_generate_new_friendly_id?
     new_record?
   end
+  
+  def self.search(query)
+    where("title like ? OR subtitle like ? OR content like ?", "%#{query}%", "%#{query}%", "%#{query}%")
+  end
 end

@@ -42,6 +42,13 @@
           </li>
         </ul>
       </div>
+      <div id="search">
+        <%= form_tag(posts_path, :method => "get", id: "search-form") do %>
+          <p>
+            <%= text_field_tag :search, params[:search], placeholder: "Search" %>
+          </p>
+        <% end %>
+      </div>
     </div>
   </div>
 </div>
