@@ -10,6 +10,7 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <%= yield :head %>
 </head>
 <body>
   <header class="navbar navbar-inverse navbar-fixed-top bs-docs-nav clearfix" role="banner">
@@ -67,6 +68,7 @@
 			<a href="https://ca.linkedin.com/in/drempel" target="_blank"><i class="fa fa-linkedin"></i></a>
       <a href="https://github.com/danrempel" target="_blank"><i class="fa fa-github"></i></a>
       <a href="http://stackoverflow.com/users/5701265/dan-rempel" target="_blank"><i class="fa fa-stack-overflow"></i></a>
+      <a href="http://www.rempelonrails.com/posts.rss" target="_blank"><i class="fa fa-rss"></i></a>
 		</nav>
 	</footer>
 <%= render 'layouts/google_analytics' %>
