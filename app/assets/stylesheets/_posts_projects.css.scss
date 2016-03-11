@@ -316,6 +316,18 @@ ul li a {
 }
 
 @media only screen and (max-width: 71.25em) {
+  #post_show_content header h1 {
+    font-size: 2rem;
+  }
+  #post_show_content p {
+    font-size: 15px;
+  }
+  #post_show_content blockquote p {
+    font-size: 14px;
+  }
+  code, pre {
+    font-size: 15px;
+  }
   #popular_posts ul a {
     display: block;
     text-align: center;

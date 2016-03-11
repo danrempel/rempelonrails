@@ -82,14 +82,19 @@ $border: #D5D5D5;
 	}
 }
 
-/* Small devices (tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 71.25em) {
   .homepage_content h2 {
-    font-size: 1.06rem;
-    text-align: left;
+    font-size: 19px;
     padding-top: 0;
   }
+  .homepage_content p {
+    font-size: 15px;
+    text-align: justify;
+  }
   hr {
-    margin: 2rem 0;
+    margin: 1em auto;
+  }
+  .wrapper_padding {
+    padding: 0;
   }
 }
