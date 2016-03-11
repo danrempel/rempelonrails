@@ -19,7 +19,7 @@
   <br>
 
   <%= f.label :tags %><br>
-  <%= f.text_field :tag_list, placeholder: "Tags separated with comma"  %>
+  <%= f.text_field :tag_list, value: @post.tag_list.to_s, placeholder: "Tags separated with comma"  %>
 
   <br>
 
