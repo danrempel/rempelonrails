@@ -130,7 +130,8 @@ p.about_me {
 	header {
 		text-align: center;
 		.date {
-			font-style: .9em;
+			font-size: 1.2em;
+      font-family: 'Roboto', sans-serif;
 			color: $light;
 			margin: 20px 0 10px 0;
 		}
@@ -169,7 +170,6 @@ p.about_me {
       font-weight: 700;
     }
     blockquote {
-      background: #f9f9f9;
       border-left: 10px solid #ccc;
       margin: 1.5em 10px;
       padding: 0.5em 10px;
@@ -184,6 +184,7 @@ p.about_me {
       vertical-align: -0.4em;
     }
     blockquote p {
+      font-size: 17px;
       display: inline;
       color: #666;
     }
