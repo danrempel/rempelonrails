@@ -12,10 +12,10 @@ class Post < ActiveRecord::Base
   end
 
   def next
-    Post.where("id > ?", id).limit(1).first
+    Post.where("id > ?", id).order(id: :asc).limit(1).first
   end
 
   def prev
-    Post.where("id < ?", id).limit(1).first
+    Post.where("id < ?", id).order(id: :desc).limit(1).first
   end
 end
